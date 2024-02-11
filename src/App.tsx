@@ -13,4 +13,4 @@ function App() {
 }
 
 // Exporting Area
-export { App };
+export default App;
