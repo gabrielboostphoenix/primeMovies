@@ -1,6 +1,6 @@
 // Importing Area
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import { MoviesExploring } from './pages/moviesExploring';
+import { MoviesExploring } from './pages/movies-exploring-page/moviesExploring';
 
 const AppRoutes = () => {
 
@@ -14,7 +14,7 @@ const AppRoutes = () => {
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path='/grettings' element={ <MoviesExploring /> } />
+                    <Route path='/' element={ <MoviesExploring /> } />
                 </Routes>
             </BrowserRouter>
         </>
