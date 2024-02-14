@@ -1,31 +1,34 @@
 // Importing Area
 import { Link } from 'react-router-dom';
-import { requestService, URL } from '../../services/axios';
+import { requestService } from '../../services/axios';
 import { useEffect, useState } from 'react';
+import { movie } from '../../types/movie';
 
 // That's a component relative to the movies exploring page
 const MoviesExploring = () => {
     /*
         Using a react hook to declare the necessary variables
     */
-    const [ movies, setMovies ] = useState<Object[]>([]);
+    const [ movies, setMovies ] = useState<movie[]>([]);
     const [ loading, setLoading ] = useState<Boolean>(true);
+    const apiKey: string = import.meta.env.VITE_APP_API_KEY ? import.meta.env.VITE_APP_API_KEY : '';
 
     // This is a function that loads all of the movies
-    async function loadMovies() {
+    async function loadMovies(): Promise<movie[]> {
         try {
 
             // Using axios client request service to load the movies
-            const operationResult = await requestService.get(URL);
-            // Storing the data of result in another variable
-            let result = await operationResult.data.results;
-            // Setting the movies constant
-            setMovies(result);
+            const operationResult = await requestService.get(`/movie/now_playing?api_key=${apiKey}`);
+            // Storing the result data in another variable and filtering it
+            let result: movie[] = await operationResult.data.results;
+            // Returning the result
+            return result;
 
-        } catch (error) {
+        } catch (error: any) {
 
-            // Returning an erro log
-            console.log(error);
+            // Returning an error and your log message
+            console.log(error.message);
+            return error;
 
         }
     }
@@ -35,12 +38,16 @@ const MoviesExploring = () => {
         They will be shown to the client
     */
     useEffect(() => {
+        const initializeLoad = async () => {
+            // Using the function to load all of the avaliable movies
+            const moviesResult = await loadMovies();
+            // Saving it
+            setMovies(moviesResult);
+            // Changing the loading state of movies
+            setLoading(false);
+        };
 
-        // Using the function to load all of the avaliable movies
-        loadMovies();
-        // Changing the loading state of movies
-        setLoading(false);
-
+        initializeLoad();
     }, []);
 
     // Checking if was possible to find the movies to load it
@@ -58,12 +65,18 @@ const MoviesExploring = () => {
         // Returning a result of loaded movies to the client
         return (
             <main>
-                { movies.map((element: any, index: any) => {
-                    <div key={index}>
-                        <img src={element.poster_path} alt='Poster do filme em cartaz no cinema'/>
-                        <Link to={'/'}>Ver Mais</Link>
-                    </div>
-                }) }
+                {movies.map((item: movie, index: number) => {
+                    return (
+                        <article key={index}>
+                            <h2>{item.title}</h2>
+                            <img
+                                src={item.backdrop_path}
+                                alt={`Imagem de poster relativo ao filme ${item.title}`}
+                            />
+                            <Link to={'/'}>Ver Mais</Link>
+                        </article>
+                    );
+                })}
             </main>
         );
 
