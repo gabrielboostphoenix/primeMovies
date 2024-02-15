@@ -70,10 +70,10 @@ const MoviesExploring = () => {
                         <article key={index}>
                             <h2>{item.title}</h2>
                             <img
-                                src={item.backdrop_path}
+                                src={`${import.meta.env.VITE_APP_SECURE_BASE_URL}${import.meta.env.VITE_APP_BACKDROP_SIZE}${item.backdrop_path}?api_key=${import.meta.env.VITE_APP_API_KEY}`}
                                 alt={`Imagem de poster relativo ao filme ${item.title}`}
                             />
-                            <Link to={'/'}>Ver Mais</Link>
+                            <Link to={`/movieView/:${item.id}`}>Ver Mais</Link>
                         </article>
                     );
                 })}

@@ -5,19 +5,13 @@ import { MovieView } from './pages/movie-view-page/movieView';
 
 const AppRoutes = () => {
 
-    /*
-        <Route path='/movies-exploring' element={  } />
-        <Route path='/movie-view:id' element={  } />
-        <Route path='/favorite-movies' element={  } />
-    */
-
     return (
         <>
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={ <MoviesExploring /> } />
                     <Route path='/moviesExploring' element={ <MoviesExploring /> } />
-                    <Route path='/movieView:id' element={ <MovieView /> } />
+                    <Route path='/movieView/:movieID' element={ <MovieView /> } />
                 </Routes>
             </BrowserRouter>
         </>
