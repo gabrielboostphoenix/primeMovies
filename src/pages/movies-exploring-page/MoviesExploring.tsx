@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { requestService } from '../../services/axios';
 import { useEffect, useState } from 'react';
 import { movie } from '../../types/movie';
+import Style from './MoviesExploring.module.css';
 
 // That's a component relative to the movies exploring page
 const MoviesExploring = () => {
@@ -55,8 +56,8 @@ const MoviesExploring = () => {
 
         // Returning a result of loading state to the client
         return (
-            <main>
-                <p>OPS! Infelizmente ainda não foi possível carregar os filmes...</p>
+            <main className={Style.container}>
+                <p className={Style.loadingMessage}>OPS! Infelizmente ainda não foi possível carregar os filmes...</p>
             </main>
         );
 
@@ -64,16 +65,17 @@ const MoviesExploring = () => {
 
         // Returning a result of loaded movies to the client
         return (
-            <main>
+            <main className={Style.container}>
                 {movies.map((item: movie, index: number) => {
                     return (
-                        <article key={index}>
-                            <h2>{item.title}</h2>
+                        <article key={index} className={Style.movie}>
+                            <h2 className={Style.movieTitle}>{item.title}</h2>
                             <img
                                 src={`${import.meta.env.VITE_APP_SECURE_BASE_URL}${import.meta.env.VITE_APP_BACKDROP_SIZE}${item.backdrop_path}?api_key=${import.meta.env.VITE_APP_API_KEY}`}
                                 alt={`Imagem de poster relativo ao filme ${item.title}`}
-                            />
-                            <Link to={`/movieView/:${item.id}`}>Ver Mais</Link>
+                                className={Style.poster}
+                                />
+                            <Link to={`/movieView/${item.id}`} className={Style.seeMoreButton}>Ver Mais</Link>
                         </article>
                     );
                 })}

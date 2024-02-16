@@ -1,7 +1,7 @@
 // Importing Area
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import { MoviesExploring } from './pages/movies-exploring-page/moviesExploring';
-import { MovieView } from './pages/movie-view-page/movieView';
+import { MoviesExploring } from './pages/movies-exploring-page/MoviesExploring';
+import { MovieView } from './pages/movie-view-page/MovieView';
 
 const AppRoutes = () => {
 
