@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 24px;
 }
 
@@ -12,18 +12,17 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(226, 218, 218);
+    background-color: rgba(14, 13, 13, 0.945);
 }
 
 .movie {
-    padding: 0px;
     width: 300px;
     height: 380px;
-    margin: 10px;
+    margin: 16px 6px;
     border: 0.001em solid rgba(128, 128, 128, 0.466);
     border-radius: 18px;
     box-shadow: 3px 0.3em 0.3em rgba(129, 126, 126, 0.938);
-    background-color: rgba(7, 7, 7, 0.945);
+    background-color: rgb(202, 197, 197);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -33,19 +32,20 @@
 .movieTitle {
     font-size: 26px;
     font-style: italic;
-    color: rgba(14, 14, 216, 0.836);
+    color: rgb(0, 0, 255);
 }
 
 .poster {
     width: 100%;
     height: 70%;
+    border-radius: 5px;
 }
 
 .seeMoreButton {
     font-size: 20px;
-    font-style: italic;
     font-weight: 800;
     text-decoration: none;
+    color: rgb(0, 0, 255);
 }
 
 .loadingMessage {
