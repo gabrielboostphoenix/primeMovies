@@ -7,6 +7,7 @@ import Style from './MoviesExploring.module.css';
 
 // That's a component relative to the movies exploring page
 const MoviesExploring = () => {
+
     /*
         Using a react hook to declare the necessary variables
     */
