@@ -20,7 +20,12 @@ const MoviesExploring = () => {
         try {
 
             // Using axios client request service to load the movies
-            const operationResult = await requestService.get(`/movie/now_playing?api_key=${apiKey}`);
+            const operationResult = await requestService.get(`/movie/now_playing`, {
+                params: {
+                    api_key: apiKey,
+                    language: 'pt-BR'
+                }
+            });
             // Storing the result data in another variable and filtering it
             let result: movie[] = await operationResult.data.results;
             // Returning the result
@@ -58,7 +63,9 @@ const MoviesExploring = () => {
         // Returning a result of loading state to the client
         return (
             <main className={Style.container}>
-                <p className={Style.loadingMessage}>OPS! Infelizmente ainda não foi possível carregar os filmes...</p>
+                <article className={Style.contentBox}>
+                    <p className={Style.loadingMessage}>OPS! Infelizmente ainda não foi possível carregar os filmes...</p>
+                </article>
             </main>
         );
 
@@ -72,7 +79,7 @@ const MoviesExploring = () => {
                         <article key={index} className={Style.movie}>
                             <h2 className={Style.movieTitle}>{item.title}</h2>
                             <img
-                                src={`${import.meta.env.VITE_APP_SECURE_BASE_URL}${import.meta.env.VITE_APP_BACKDROP_SIZE}${item.backdrop_path}?api_key=${import.meta.env.VITE_APP_API_KEY}`}
+                                src={`${import.meta.env.VITE_APP_SECURE_BASE_URL}${import.meta.env.VITE_APP_BACKDROP_SIZE}${item.backdrop_path}?api_key=${import.meta.env.VITE_APP_API_KEY}&language=pt-BR`}
                                 alt={`Imagem de poster relativo ao filme ${item.title}`}
                                 className={Style.poster}
                                 />

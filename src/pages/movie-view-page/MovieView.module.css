@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    color: rgba(14, 13, 13, 0.945);
+}
+
+.container {
+    width: 100vw;
+    min-height: 84vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(14, 13, 13, 0.945);
+    border: 1px solid black;
+    padding: 30px 0px;
+}
+
+.movie {
+    width: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0.001em solid rgba(128, 128, 128, 0.466);
+    border-radius: 18px;
+    box-shadow: 3px 0.5em 0.5em rgba(129, 126, 126, 0.938);
+    background-color: rgb(202, 197, 197);
+    padding: 8px;
+}
+
+.movieTitle {
+    font-size: 26px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poster {
+    width: 100%;
+    height: 55%;
+    border-radius: 5px;
+}
+
+.descriptionTitle {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.descriptionText {
+    letter-spacing: 2px;
+    text-indent: 15px;
+    text-align: justify;
+}
+
+.releaseDateTitle {
+    font-size: 25px;
+    font-style: italic;
+    letter-spacing: 4px;
+}
+
+.releaseDateText {
+    font-style: normal;
+}
+
+.contentBox {
+    width: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0.001em solid rgba(128, 128, 128, 0.466);
+    border-radius: 18px;
+    box-shadow: 3px 0.5em 0.5em rgba(129, 126, 126, 0.938);
+    background-color: rgb(202, 197, 197);
+    padding: 10px;
+}
+
+.loadingMessage {
+    letter-spacing: 4px;
+    align-content: justify;
+}

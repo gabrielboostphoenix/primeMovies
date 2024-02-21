@@ -13,18 +13,22 @@ const Header = () => {
         const result = localStorage.getItem('primeMovies');
         // Checking whether there are
         if (typeof result === 'string') {
+
             // Extracting the converted informations
             const convertedInformations: userInformations = JSON.parse(result);
             // Filtering them to get the user credentials
             const loginInformations = convertedInformations.jwtUserCredentials;
             // Returning the correct information
             return loginInformations;
+            
         } else {
+
             /*
                 Returning a false boolean value like a response
                 This information indicates that wasn't possible to find the jwt
             */
             return false;
+
         }
     };
 
@@ -61,13 +65,13 @@ const Header = () => {
     // Returning the result to the client
     return (
         <header className={Style.container}>
-            <h1 className={Style.logo}>PrimeMovies</h1>
+            <Link to={'/moviesExploring'} className={Style.linkEffect}><h1 className={Style.logo}>PrimeMovies</h1></Link>
             <nav className={Style.navigationArea}>
                 {
                     loginStatus? <Link to={'/favoriteMovie'} className={Style.favoriteMoviesButton}>Meu Favoritos</Link> : <Link to={'/signIn'} className={Style.loginButton}>Login</Link>
                 }
                 {
-                    !loginStatus? <Link to={'/signUp'} className={Style.signUpButton}>Cadastrar</Link> : false
+                    loginStatus? false : <Link to={'/signUp'} className={Style.signUpButton}>Cadastrar</Link>
                 }
             </nav>
         </header>
