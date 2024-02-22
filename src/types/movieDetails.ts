@@ -1,18 +1,13 @@
 // This is the movie details type
-type movieDetails = {
+interface movieDetails {
     adult: boolean,
-    backdrop_path: string | null,
-    belongs_to_collection: {
-        id: number,
-        name: string,
-        poster_path: string | null,
-        backdrop_path: string | null
-    },
+    backdrop_path: string,
+    belongs_to_collection: null,
     budget: number,
     genres: {
         id: number,
         name: string
-    }[],
+      }[],
     homepage: string,
     id: number,
     imdb_id: string,
@@ -20,10 +15,10 @@ type movieDetails = {
     original_title: string,
     overview: string,
     popularity: number,
-    poster_path: string | null,
+    poster_path: string,
     production_companies: {
         id: number,
-        logo_path: string | null,
+        logo_path: string,
         name: string,
         origin_country: string
     }[],
@@ -43,7 +38,7 @@ type movieDetails = {
     tagline: string,
     title: string,
     video: boolean,
-    vote_avarage: number,
+    vote_average: number,
     vote_count: number
 }
 
