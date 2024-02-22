@@ -82,5 +82,5 @@
 
 .loadingMessage {
     letter-spacing: 4px;
-    align-content: justify;
+    text-align: justify;
 }
