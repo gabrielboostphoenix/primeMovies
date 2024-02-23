@@ -1,6 +1,6 @@
 // Importing Area
 import { Link } from 'react-router-dom';
-import { requestService } from '../../services/axios';
+import { moviesRequestServiceInstace } from '../../services/moviesRequestService';
 import { useEffect, useState } from 'react';
 import { movie } from '../../types/movie';
 import Style from './MoviesExploring.module.css';
@@ -13,16 +13,14 @@ const MoviesExploring = () => {
     */
     const [ movies, setMovies ] = useState<movie[]>([]);
     const [ loading, setLoading ] = useState<Boolean>(true);
-    const apiKey: string = import.meta.env.VITE_APP_API_KEY ? import.meta.env.VITE_APP_API_KEY : '';
 
     // This is a function that loads all of the movies
     async function loadMovies(): Promise<movie[]> {
         try {
 
             // Using axios client request service to load the movies
-            const operationResult = await requestService.get(`/movie/now_playing`, {
+            const operationResult = await moviesRequestServiceInstace.get(`/movie/now_playing`, {
                 params: {
-                    api_key: apiKey,
                     language: 'pt-BR'
                 }
             });

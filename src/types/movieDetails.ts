@@ -50,7 +50,7 @@ interface movieDetails {
     release_date: string,
     revenue: number,
     runtime: number,
-    spoken_languages: any,
+    spoken_languages: {}[] | {} | null,
     status: string,
     tagline: string,
     title: string,
