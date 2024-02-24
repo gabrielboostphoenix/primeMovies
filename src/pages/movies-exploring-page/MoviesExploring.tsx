@@ -1,6 +1,6 @@
 // Importing Area
 import { Link } from 'react-router-dom';
-import { moviesRequestServiceInstace } from '../../services/moviesRequestService';
+import { requestServiceInstace } from '../../services/requestService';
 import { useEffect, useState } from 'react';
 import { movie } from '../../types/movie';
 import Style from './MoviesExploring.module.css';
@@ -19,7 +19,7 @@ const MoviesExploring = () => {
         try {
 
             // Using axios client request service to load the movies
-            const operationResult = await moviesRequestServiceInstace.get(`/movie/now_playing`, {
+            const operationResult = await requestServiceInstace.get(`/movie/now_playing`, {
                 params: {
                     language: 'pt-BR'
                 }
@@ -77,7 +77,7 @@ const MoviesExploring = () => {
                         <article key={index} className={Style.movie}>
                             <h2 className={Style.movieTitle}>{item.title}</h2>
                             <img
-                                src={`${import.meta.env.VITE_APP_SECURE_BASE_URL}${import.meta.env.VITE_APP_BACKDROP_SIZE}${item.backdrop_path}?api_key=${import.meta.env.VITE_APP_API_KEY}&language=pt-BR`}
+                                src={`https://image.tmdb.org/t/p/w500${item.backdrop_path}`}
                                 alt={`Imagem de poster relativo ao filme ${item.title}`}
                                 className={Style.poster}
                                 />
