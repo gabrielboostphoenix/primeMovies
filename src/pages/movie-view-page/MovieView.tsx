@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { movieDetails } from '../../types/movieDetails';
 import { requestServiceInstace } from '../../services/requestService';
+import { AxiosResponse } from 'axios';
 
 // That's a component relative to the movie view page
 const MovieView = () => {
@@ -13,13 +14,13 @@ const MovieView = () => {
         try {
 
             // Using axios client request service to load the movie and saving it
-            const operationResult: movieDetails = await requestServiceInstace.get(`/movie/${movieID}`, {
+            const operationResult: AxiosResponse = await requestServiceInstace.get(`movie/${movieID}`, {
                 params: {
                     language: 'pt-BR'
                 }
             });
-            // Returning the converted operation result
-            return operationResult;
+            // Returning the filtered operation result
+            return operationResult.data;
 
         } catch (error: any) {
 
@@ -48,12 +49,13 @@ const MovieView = () => {
     useEffect(() => {
 
         // This is the function that initializes the loading
-        const initializeLoad = async () => {
+        async function initializeLoad() {
 
             // Using the function and saving your result
             const result: movieDetails = await loadSelectedSpecificMovie();
             // Setting the selected specific movie
             setSpecifiedMovie(result);
+            console.log(specifiedMovie);
             // Setting the movie loading state
             setLoadingMovie(false);
 
@@ -77,7 +79,7 @@ const MovieView = () => {
 
         );
 
-    } else if (specifiedMovie !== null) {
+    } else {
 
         // Returning the loaded content to the user
         return (

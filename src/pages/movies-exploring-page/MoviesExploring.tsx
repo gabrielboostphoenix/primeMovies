@@ -19,7 +19,7 @@ const MoviesExploring = () => {
         try {
 
             // Using axios client request service to load the movies
-            const operationResult = await requestServiceInstace.get(`/movie/now_playing`, {
+            const operationResult = await requestServiceInstace.get(`movie/now_playing`, {
                 params: {
                     language: 'pt-BR'
                 }
