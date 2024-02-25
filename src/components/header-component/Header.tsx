@@ -9,6 +9,7 @@ const Header = () => {
 
     // This is a function that checks if exists user information
     const checkForUserInformation = () => {
+
         // Getting the user informations
         const result = localStorage.getItem('primeMovies');
         // Checking whether there are
@@ -18,9 +19,21 @@ const Header = () => {
             const convertedInformations: userInformations = JSON.parse(result);
             // Filtering them to get the user credentials
             const loginInformations = convertedInformations.jwtUserCredentials;
+
+            // Checking whether the data type is undefined
+            if (typeof loginInformations === 'undefined') {
+
+                /*
+                    Returning a false boolean value like a response
+                    This information indicates that wasn't possible to find the jwt
+                */
+                return false;
+
+            }
+
             // Returning the correct information
             return loginInformations;
-            
+
         } else {
 
             /*
@@ -42,7 +55,7 @@ const Header = () => {
     */
     useEffect(() => {
 
-        // Using the function and storing your result
+        // Using the function and storing your returned data
         const operationResult = checkForUserInformation();
 
         // Checking the data type of result

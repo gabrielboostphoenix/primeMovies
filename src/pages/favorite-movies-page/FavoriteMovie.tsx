@@ -1,5 +1,5 @@
 // Importing Area
-import { userInformations } from '../../types/userInformations';
+import { userInformations } from '../../types/UserInformations';
 import Style from './FavoriteMovie.module.css';
 import { useState, useEffect } from 'react';
 

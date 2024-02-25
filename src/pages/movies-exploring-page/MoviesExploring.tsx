@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import { requestServiceInstace } from '../../services/requestService';
 import { useEffect, useState } from 'react';
-import { movie } from '../../types/movie';
+import { movie } from '../../types/Movie';
 import Style from './MoviesExploring.module.css';
 
 // That's a component relative to the movies exploring page
@@ -77,7 +77,7 @@ const MoviesExploring = () => {
                         <article key={index} className={Style.movie}>
                             <h2 className={Style.movieTitle}>{item.title}</h2>
                             <img
-                                src={`https://image.tmdb.org/t/p/w500${item.backdrop_path}`}
+                                src={`https://image.tmdb.org/t/p/w1280${item.backdrop_path}`}
                                 alt={`Imagem de poster relativo ao filme ${item.title}`}
                                 className={Style.poster}
                                 />

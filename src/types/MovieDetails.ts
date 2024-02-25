@@ -1,4 +1,4 @@
-// This is the movie details type
+// This is the type 'movie details'
 interface movieDetails {
     adult: boolean,
     backdrop_path: string | null,

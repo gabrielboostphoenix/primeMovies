@@ -2,8 +2,9 @@
 import Style from './MovieView.module.css';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { movieDetails } from '../../types/movieDetails';
+import { movieDetails } from '../../types/MovieDetails';
 import { requestServiceInstace } from '../../services/requestService';
+import { dateFormat } from '../../utils/DateTimeFormatter';
 import { AxiosResponse } from 'axios';
 
 // That's a component relative to the movie view page
@@ -24,8 +25,7 @@ const MovieView = () => {
 
         } catch (error: any) {
 
-            // Returning an error and your log message
-            console.log(error.message);
+            // Returning an error
             return error;
 
         }
@@ -55,7 +55,6 @@ const MovieView = () => {
             const result: movieDetails = await loadSelectedSpecificMovie();
             // Setting the selected specific movie
             setSpecifiedMovie(result);
-            console.log(specifiedMovie);
             // Setting the movie loading state
             setLoadingMovie(false);
 
@@ -88,14 +87,14 @@ const MovieView = () => {
                 <article className={Style.movie}>
                     <h2 className={Style.movieTitle}>{specifiedMovie?.title}</h2>
                     <img
-                        src={`https://image.tmdb.org/t/p/w500${specifiedMovie?.backdrop_path}`}
+                        src={`https://image.tmdb.org/t/p/w1280${specifiedMovie?.backdrop_path}`}
                         alt={`Imagem de poster relativo ao filme ${specifiedMovie?.title}`}
                         className={Style.poster}
                     />
                     <h3 className={Style.descriptionTitle}>Descrição:</h3>
                     <p className={Style.descriptionText}>{specifiedMovie?.overview}</p>
                     <h3 className={Style.releaseDateTitle}>Data de Lançamento:</h3>
-                    <p className={Style.releaseDateText}>{specifiedMovie?.release_date}</p>
+                    <p className={Style.releaseDateText}>{typeof specifiedMovie?.release_date === 'string' ? dateFormat(specifiedMovie?.release_date) : false }</p>
                 </article>
             </main>
 

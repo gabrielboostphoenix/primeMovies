@@ -1,7 +1,7 @@
 // Importing Area
 import { Jwt } from 'jsonwebtoken';
 
-// That's a user informations type
+// That's a type 'user informations'
 interface userInformations {
     jwtUserCredentials: Jwt,
     favoriteMovies: number[]
