@@ -21,7 +21,8 @@ const MoviesExploring = () => {
             // Using axios client request service to load the movies
             const operationResult = await requestServiceInstace.get(`movie/now_playing`, {
                 params: {
-                    language: 'pt-BR'
+                    language: 'pt-BR',
+                    region: 'BR'
                 }
             });
             // Storing the result data in another variable and filtering it
@@ -78,7 +79,7 @@ const MoviesExploring = () => {
                             <h2 className={Style.movieTitle}>{item.title}</h2>
                             <img
                                 src={`https://image.tmdb.org/t/p/w1280${item.backdrop_path}`}
-                                alt={`Imagem de poster relativo ao filme ${item.title}`}
+                                alt={`Imagem de poster relativo ao filme: "${item.title}".`}
                                 className={Style.poster}
                                 />
                             <Link to={`/movieView/${item.id}`} className={Style.seeMoreButton}>Ver Mais</Link>
