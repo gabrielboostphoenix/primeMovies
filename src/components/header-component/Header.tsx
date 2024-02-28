@@ -1,7 +1,7 @@
 // Importing Area
 import { Link } from 'react-router-dom';
 import Style from './Header.module.css';
-import { userInformations } from '../../types/userInformations';
+import { userInformations } from '../../types/UserInformations';
 import { useState, useEffect } from 'react';
 
 // That's a header component
