@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { movie } from '../../types/Movie';
 import { apiResponse } from '../../types/ApiResponse';
 import { AxiosResponse } from 'axios';
-import { HiOutlineChevronDoubleLeft, HiOutlineChevronDoubleRight, HiOutlineChevronRight } from 'react-icons/hi';
+import { HiOutlineChevronDoubleLeft, HiOutlineChevronDoubleRight } from 'react-icons/hi';
 import Style from './MoviesExploring.module.css';
 
 // That's a component relative to the movies exploring page
@@ -111,46 +111,36 @@ const MoviesExploring = () => {
                         <article key={index} className={Style.movie}>
                             <h2 className={Style.movieTitle}>{item.title}</h2>
                             <img
-                                src={`https://image.tmdb.org/t/p/w1280${item.backdrop_path}`}
+                                src={`https://image.tmdb.org/t/p/w1280${item.poster_path}`}
                                 alt={`Imagem de poster relativo ao filme: "${item.title}".`}
                                 className={Style.poster}
-                                />
+                            />
                             <Link to={`/movieView/${item.id}`} className={Style.seeMoreButton}>Ver Mais</Link>
                         </article>
 
                     );
                 })}
                 <section className={Style.navigationContainer}>
-                    <HiOutlineChevronDoubleLeft className={Style.navigationButton} onClick={(event) => {
+                    { currentPage > 1 ? <HiOutlineChevronDoubleLeft className={Style.navigationButton} onClick={(event) => {
 
                         // Setting the default behaviour for this event
                         event.preventDefault();
-                        // Checking what is the current page
-                        if (currentPage > 1 ) {
+                        // Creating a new variable where can manipulate the value
+                        let currentPageIndex = currentPage;
+                        // Setting the current page to go back the navigation system
+                        setCurrentPage(currentPageIndex - 1);
 
-                            // Creating a new variable where can manipulate the value
-                            let currentPageIndex = currentPage;
-                            // Setting the current page to go back the navigation system
-                            setCurrentPage(currentPageIndex - 1);
-
-                        }
-
-                    }}/>
-                    <HiOutlineChevronDoubleRight className={Style.navigationButton} onClick={(event) => {
+                    }}/> : false }
+                    { currentPage < pagesTotal ? <HiOutlineChevronDoubleRight className={Style.navigationButton} onClick={(event) => {
 
                         // Setting the default behaviour for this event
-                        event.preventDefault();
-                        // Checking what is the current page
-                        if (currentPage < pagesTotal) {
-                            
-                            // Creating a new variable where can manipulate the value
-                            let currentPageIndex = currentPage;
-                            // Setting the current page to go ahead in the navigation system
-                            setCurrentPage(currentPageIndex + 1);
+                        event.preventDefault();    
+                        // Creating a new variable where can manipulate the value
+                        let currentPageIndex = currentPage;
+                        // Setting the current page to go ahead in the navigation system
+                        setCurrentPage(currentPageIndex + 1);
 
-                        }
-
-                    }}/>
+                    }}/> : false }
                 </section>
             </main>
 

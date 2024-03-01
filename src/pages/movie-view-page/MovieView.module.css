@@ -17,7 +17,9 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(14, 13, 13, 0.945);
-    border: 1px solid black;
+    background-clip: border-box;
+    background-repeat: round;
+    background-size: cover;
     padding: 30px 0px;
 }
 

@@ -83,11 +83,11 @@ const MovieView = () => {
         // Returning the loaded content to the user
         return (
 
-            <main className={Style.container}>
+            <main className={Style.container} style={{backgroundImage: `url("http://image.tmdb.org/t/p/w1280${specifiedMovie?.backdrop_path}")`}}>
                 <article className={Style.movie}>
                     <h2 className={Style.movieTitle}>{specifiedMovie?.title}</h2>
                     <img
-                        src={`https://image.tmdb.org/t/p/w1280${specifiedMovie?.backdrop_path}`}
+                        src={`https://image.tmdb.org/t/p/w1280${specifiedMovie?.poster_path}`}
                         alt={`Imagem de poster relativo ao filme ${specifiedMovie?.title}`}
                         className={Style.poster}
                     />
