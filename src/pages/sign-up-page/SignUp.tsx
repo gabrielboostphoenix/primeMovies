@@ -12,7 +12,7 @@ const SignUp = () => {
                 <label htmlFor="userEmail" className={Style.userEmailLabel}>E-mail:</label>
                 <input type='email' id='userEmail' className={Style.userEmailField} placeholder='Coloque o seu endereço de e-mail' />
                 <label htmlFor='userPassword' className={Style.userPasswordLabel}>Senha:</label>
-                <input type="text" id='userPassword' className={Style.userPasswordField} placeholder='Crie uma senha para a sua conta' />
+                <input type='password' id='userPassword' className={Style.userPasswordField} placeholder='Crie uma senha para a sua conta' />
                 <button type='submit' className={Style.accountCreatingButton}>Criar Conta</button>
             </form>
         </main>
