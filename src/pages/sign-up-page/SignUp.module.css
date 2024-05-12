@@ -42,8 +42,9 @@
     border-radius: 8px;
     letter-spacing: 1px;
     margin-left: 10px;
+    padding-left: 5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     color: black;
 }
 
@@ -63,9 +64,10 @@
     border: 0.1em solid rgba(128, 128, 128, 0.466);
     border-radius: 8px;
     letter-spacing: 1px;
+    padding-left: 5px;
     margin-left: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     color: black;
 }
 
@@ -85,9 +87,10 @@
     border: 0.1em solid rgba(128, 128, 128, 0.466);
     border-radius: 8px;
     letter-spacing: 1px;
+    padding-left: 5px;
     margin-left: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     color: black;
 }
 
@@ -104,4 +107,9 @@
     height: 50px;
     align-self: center;
     justify-self: center;
+}
+
+.accountCreatingButton:hover {
+    background-color: blue;
+    color: white;
 }
