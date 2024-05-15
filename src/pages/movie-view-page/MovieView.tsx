@@ -95,6 +95,7 @@ const MovieView = () => {
                     <p className={Style.descriptionText}>{specifiedMovie?.overview}</p>
                     <h3 className={Style.releaseDateTitle}>Data de Lançamento:</h3>
                     <p className={Style.releaseDateText}>{typeof specifiedMovie?.release_date === 'string' ? dateFormat(specifiedMovie?.release_date) : false }</p>
+                    <input className={Style.saveButton} type="button" value="Salvar em Favoritos"/>
                 </article>
             </main>
 

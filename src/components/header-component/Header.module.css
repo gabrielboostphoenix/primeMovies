@@ -1,44 +1,255 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Root Content */
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    font-size: 16px;
 }
 
-.container {
-    width: 100vw;
-    height: 16vh;
-    background-color: rgb(202, 197, 197);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
+/* That's for small devices like smartphones in vertical */
+/* This style will be apply when the screen is between 320 pixels until 400 pixels */
+@media (320px <= width <= 400px) {
+
+    .container {
+        width: 100vw;
+        height: 18vh;
+        background-color: rgb(202, 197, 197);
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo, .linkEffect {
+        display: none;
+    }
+
+    .burguerMenu {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .layer_BurguerMenu {
+        background-color: black;
+        height: 0.350em;
+        width: 55%;
+        border-radius: 0.930em;
+    }
+
+    .navigationArea {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .favoriteMoviesButton, .loginButton, .signUpButton {
+        font-size: 1em;
+        font-weight: 500;
+        text-decoration: none;
+        color: blue;
+    }
+
 }
 
-.logo {
-    font-size: 35px;
-    color: rgb(0, 0, 255);
+/* That's for small devices like smartphones in horizontal */
+/* This style will be apply when the screen is between 401 pixels until 767 pixels */
+@media (401px <= width <= 767px) {
+
+    .container {
+        width: 100vw;
+        height: 18vh;
+        background-color: rgb(202, 197, 197);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .burguerMenu, .layer_BurguerMenu {
+        display: none;
+    }
+
+    .linkEffect {
+        text-decoration: none;
+        margin-left: 0.5em;
+    }
+
+    .logo {
+        font-size: 1.375em;
+        font-weight: 700;
+        letter-spacing: 0.050em;
+        color: blue;
+    }
+
+    .navigationArea {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .favoriteMoviesButton, .loginButton, .signUpButton {
+        font-size: 1.1em;
+        font-weight: 500;
+        text-decoration: none;
+        color: blue;
+    }
+
 }
 
-.linkEffect {
-    text-decoration: none;
-    margin-left: 20px;
+/* That's for small devices like tablets in vertical */
+/* This style will be apply when the screen is between 768 pixels until 1023 pixels */
+@media (768px <= width <= 1023px) {
+
+    .container {
+        width: 100vw;
+        height: 18vh;
+        background-color: rgb(202, 197, 197);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .burguerMenu, .layer_BurguerMenu {
+        display: none;
+    }
+
+    .linkEffect {
+        text-decoration: none;
+        margin-left: 1em;
+    }
+
+    .logo {
+        font-size: 1.5em;
+        font-weight: 800;
+        letter-spacing: 0.075em;
+        color: blue;
+    }
+
+    .navigationArea {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .favoriteMoviesButton, .loginButton, .signUpButton {
+        font-size: 1.3em;
+        font-weight: 500;
+        text-decoration: none;
+        color: blue;
+    }
+
 }
 
-.navigationArea {
-    width: 45%;
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
+/* That's for a small device like a tablet in horizontal */
+/* This can be to big devices like laptops or notebooks */
+/* It will be apply when the width is between 1024 pixels until 1439 pixels */
+@media (1024px <= width <= 1439px) {
+
+    .container {
+        width: 100vw;
+        height: 18vh;
+        background-color: rgb(202, 197, 197);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .burguerMenu, .layer_BurguerMenu {
+        display: none;
+    }
+
+    .linkEffect {
+        text-decoration: none;
+        margin-left: 1.375em;
+    }
+
+    .logo {
+        font-size: 1.625em;
+        font-weight: 900;
+        letter-spacing: 0.075em;
+        color: blue;
+    }
+
+    .navigationArea {
+        width: 55%;
+        height: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .favoriteMoviesButton, .loginButton, .signUpButton {
+        font-size: 1.375em;
+        font-weight: 500;
+        text-decoration: none;
+        color: blue;
+    }
+
 }
 
-.favoriteMoviesButton, .loginButton, .signUpButton {
-    font-size: 22px;
-    font-weight: 500;
-    color: rgb(0, 0, 255);
-    text-decoration: none;
+/* That's for big devices or monitors with a large width */
+/* This style will be apply when the width is equal or bigger than 1024 pixels */
+@media (1440px <= width) {
+
+    .container {
+        width: 100vw;
+        height: 18vh;
+        background-color: rgb(202, 197, 197);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .burguerMenu, .layer_BurguerMenu {
+        display: none;
+    }
+
+    .linkEffect {
+        text-decoration: none;
+        margin-left: 1.5em;
+    }
+
+    .logo {
+        font-size: 1.75em;
+        font-weight: 900;
+        letter-spacing: 0.085em;
+        color: blue;
+    }
+
+    .navigationArea {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .favoriteMoviesButton, .loginButton, .signUpButton {
+        font-size: 1.5em;
+        font-weight: 500;
+        text-decoration: none;
+        color: blue;
+    }
+
 }

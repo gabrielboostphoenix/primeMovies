@@ -78,15 +78,30 @@ const Header = () => {
     // Returning the result to the client
     return (
         <header className={Style.container}>
-            <Link to={'/moviesExploring'} className={Style.linkEffect}><h1 className={Style.logo}>PrimeMovies</h1></Link>
+
+            <Link to={'/moviesExploring'} className={Style.linkEffect}>
+                <h1 className={Style.logo}>PrimeMovies</h1>
+            </Link>
+
+            <div className={Style.burguerMenu}>
+                <span className={Style.layer_BurguerMenu}></span>
+                <span className={Style.layer_BurguerMenu}></span>
+                <span className={Style.layer_BurguerMenu}></span>
+            </div>
+
             <nav className={Style.navigationArea}>
                 {
-                    loginStatus? <Link to={'/favoriteMovie'} className={Style.favoriteMoviesButton}>Meu Favoritos</Link> : <Link to={'/signIn'} className={Style.loginButton}>Login</Link>
+                    loginStatus ?
+                    <Link to={'/favoriteMovie'} className={Style.favoriteMoviesButton}>Meu Favoritos</Link> :
+                    <Link to={'/signIn'} className={Style.loginButton}>Login</Link>
                 }
                 {
-                    loginStatus? false : <Link to={'/signUp'} className={Style.signUpButton}>Cadastrar</Link>
+                    loginStatus ?
+                    false :
+                    <Link to={'/signUp'} className={Style.signUpButton}>Cadastrar</Link>
                 }
             </nav>
+
         </header>
     );
 };
