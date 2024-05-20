@@ -33,7 +33,7 @@
     font-style: italic;
     font-weight: 600;
     font-size: 22px;
-    color: blue;
+    color: #3E6CEC;
 }
 
 .userNameField {
@@ -56,7 +56,7 @@
     font-style: italic;
     font-weight: 600;
     font-size: 22px;
-    color: blue;
+    color: #3E6CEC;
 }
 
 .userEmailField {
@@ -79,7 +79,7 @@
     font-style: italic;
     font-weight: 600;
     font-size: 22px;
-    color: blue;
+    color: #3E6CEC;
 }
 
 .userPasswordField {
@@ -101,7 +101,7 @@
     box-shadow: 0.8em 0.8em 50px rgba(129, 126, 126, 0.938);
     font-weight: 700;
     font-size: 20px;
-    color: blue;
+    color: #3E6CEC;
     cursor: pointer;
     width: 140px;
     height: 50px;
@@ -110,6 +110,6 @@
 }
 
 .accountCreatingButton:hover {
-    background-color: blue;
+    background-color: #3E6CEC;
     color: white;
 }

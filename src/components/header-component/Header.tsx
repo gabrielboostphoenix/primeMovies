@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 // That's a header component
 const Header = () => {
 
-    // This is a function that checks if exists user information
+    // That's a function that checks if exists user information
     const checkForUserInformation = () => {
 
         // Getting the user informations
@@ -49,6 +49,7 @@ const Header = () => {
         Using the react hook to define the necessary variables that will be used
     */
     const [loginStatus, setLoginStatus] = useState<Boolean>(false);
+    const [activated, setActive] = useState<Boolean>(false);
 
     /*
         Using the react hook when the client enters in the application
@@ -80,14 +81,54 @@ const Header = () => {
         <header className={Style.container}>
 
             <Link to={'/moviesExploring'} className={Style.linkEffect}>
+
                 <h1 className={Style.logo}>PrimeMovies</h1>
+
             </Link>
 
-            <div className={Style.burguerMenu}>
-                <span className={Style.layer_BurguerMenu}></span>
-                <span className={Style.layer_BurguerMenu}></span>
-                <span className={Style.layer_BurguerMenu}></span>
+            <div className={Style.burgerMenu} onClick={() => setActive(true)}>
+
+                <span className={Style.layer_BurgerMenu}></span>
+                <span className={Style.layer_BurgerMenu}></span>
+                <span className={Style.layer_BurgerMenu}></span>
+
             </div>
+
+            <aside className={activated ? Style.activatedAsideMenu : Style.disableAsideMenu }>
+
+                <div className={Style.disableButtonContainer} onClick={() => setActive(false)}>
+                    <span className={`${Style.disableButton_firstLayer} ${Style.disableButton_layer}`}></span>
+                    <span className={`${Style.disableButton_secondLayer} ${Style.disableButton_layer}`}></span>
+                </div>
+
+                <ul className={Style.asideMenu_linksList}>
+                    <li className={Style.linkContainer}>
+                        {
+                            loginStatus ?
+                            <Link to={'/favoriteMovies'} className={Style.link}>Filmes Favoritos</Link> :
+                            <Link to={'/signIn'} className={Style.link}>Login</Link>
+                        }
+                        {
+                            loginStatus ?
+                            <img src="../../../public/favorites.png" alt="Ícone de Favoritos"/> :
+                            <img src="../../../public/login.png" alt="Ícone de Login"/>
+                        }
+                    </li>
+                    <li className={Style.linkContainer}>
+                        {
+                            loginStatus ?
+                            false :
+                            <Link to={'/signUp'} className={Style.link}>SignUp</Link>
+                        }
+                        {
+                            loginStatus ?
+                            false :
+                            <img src="../../../public/add.png" alt="Ícone de SignUp"/>
+                        }
+                    </li>
+                </ul>
+
+            </aside>
 
             <nav className={Style.navigationArea}>
                 {
