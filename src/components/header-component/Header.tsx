@@ -81,17 +81,13 @@ const Header = () => {
         <header className={Style.container}>
 
             <Link to={'/moviesExploring'} className={Style.linkEffect}>
-
                 <h1 className={Style.logo}>PrimeMovies</h1>
-
             </Link>
 
             <div className={Style.burgerMenu} onClick={() => setActive(true)}>
-
                 <span className={Style.layer_BurgerMenu}></span>
                 <span className={Style.layer_BurgerMenu}></span>
                 <span className={Style.layer_BurgerMenu}></span>
-
             </div>
 
             <aside className={activated ? Style.activatedAsideMenu : Style.disableAsideMenu }>
@@ -102,45 +98,62 @@ const Header = () => {
                 </div>
 
                 <ul className={Style.asideMenu_linksList}>
+
                     <li className={Style.linkContainer}>
+
                         {
                             loginStatus ?
                             <Link to={'/favoriteMovies'} className={Style.link}>Filmes Favoritos</Link> :
                             <Link to={'/signIn'} className={Style.link}>Login</Link>
                         }
+
                         {
                             loginStatus ?
                             <img src="../../../public/favorites.png" alt="Ícone de Favoritos"/> :
                             <img src="../../../public/login.png" alt="Ícone de Login"/>
                         }
+
                     </li>
+
                     <li className={Style.linkContainer}>
+
                         {
                             loginStatus ?
                             false :
                             <Link to={'/signUp'} className={Style.link}>SignUp</Link>
                         }
+
                         {
                             loginStatus ?
                             false :
                             <img src="../../../public/add.png" alt="Ícone de SignUp"/>
                         }
+
                     </li>
+
+                    <li className={Style.linkContainer}>
+                        <Link to={'/moviesExploring'} className={Style.link}>PrimeMovies</Link>
+                        <img src="../../../public/home.png" alt="Ícone de Home"/>
+                    </li>
+
                 </ul>
 
             </aside>
 
             <nav className={Style.navigationArea}>
+
                 {
                     loginStatus ?
                     <Link to={'/favoriteMovie'} className={Style.favoriteMoviesButton}>Meu Favoritos</Link> :
                     <Link to={'/signIn'} className={Style.loginButton}>Login</Link>
                 }
+
                 {
                     loginStatus ?
                     false :
                     <Link to={'/signUp'} className={Style.signUpButton}>Cadastrar</Link>
                 }
+
             </nav>
 
         </header>

@@ -1,96 +1,269 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Root Content */
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    font-size: 22px;
+    font-size: 16px;
     color: rgba(14, 13, 13, 0.945);
 }
 
-.container {
-    width: 100vw;
-    min-height: 84vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(14, 13, 13, 0.945);
-    background-clip: border-box;
-    background-repeat: round;
-    background-size: cover;
-    padding: 30px 0px;
+/* That's for small devices like smartphones in vertical */
+/* This style will be apply when the screen is between 320 pixels until 400 pixels */
+@media screen and (320px <= width <= 400px) {
+
+    .container {
+        width: 100vw;
+        min-height: 82vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.875em 0em;
+        background-color: rgba(14, 13, 13, 0.945);
+        background-size: cover;
+        background-repeat: round;
+        background-clip: border-box;
+    }
+
+    /* That's for when the content is loading */
+    .contentBox {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 0.01em solid rgba(128, 128, 128, 0.466);
+        border-radius: 1.125em;
+        box-shadow: 0.188em 0.5em 0.5em rgba(129, 126, 126, 0.938);
+        background-color: rgb(202, 197, 197);
+        padding: 0.625em 0.313em;
+    }
+
+    .loadingMessage {
+        font-size: 1.125em;
+        letter-spacing: 0.094em;
+        text-align: center;
+    }
+
+    /* That's for when the content is loaded */
+    .movie {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 0.01em solid rgba(128, 128, 128, 0.466);
+        border-radius: 0.938em;
+        box-shadow: 0.1em 0.1em 2.5em rgba(129, 126, 126, 0.938);
+        background-color: rgb(202, 197, 197);
+        padding: 0.5em;
+    }
+
+    .movieTitle {
+        font-size: 1.375em;
+        font-weight: 700;
+        font-style: italic;
+        text-align: center;
+        color: #3E6CEC;
+        margin: 0.375em 0em;
+    }
+
+    .poster {
+        width: 100%;
+        height: 45%;
+        border-radius: 1em;
+    }
+
+    .descriptionTitle {
+        font-size: 1.25em;
+        font-weight: 600;
+        letter-spacing: 0.063em;
+        color: #3E6CEC;
+        margin: 0.313em 0em;
+    }
+
+    .descriptionText {
+        font-size: 0.938em;
+        text-align: center;
+        letter-spacing: 0.125em;
+    }
+
+    .releaseDateTitle {
+        font-size: 1.125em;
+        font-weight: 500;
+        text-align: center;
+        letter-spacing: 0.063em;
+        color: #3E6CEC;
+        margin: 0.25em 0em;
+    }
+
+    .releaseDateText {
+        font-size: 1.063em;
+        font-weight: 500;
+        font-style: italic;
+        text-align: center;
+        letter-spacing: 0.125em;
+    }
+
+    /* That's for a favorite movie save button in the list */
+    .saveButton {
+        font-size: 1em;
+        font-weight: 600;
+        color: #2F2D7D;
+        border: 0.01em solid transparent;
+        border-radius: 0.938em;
+        padding: 0.375em 0.625em;
+        margin: 0.5em 0em;
+    }
+
+    .saveButton:hover {
+        font-weight: 900;
+        font-size: 1.125em;
+        color: white;
+        background-color: #2F2D7D;
+        border: none;
+        cursor: pointer;
+    }
+
 }
 
-/* That's for when the content is loading */
-.contentBox {
-    width: 60%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 0.001em solid rgba(128, 128, 128, 0.466);
-    border-radius: 18px;
-    box-shadow: 3px 0.5em 0.5em rgba(129, 126, 126, 0.938);
-    background-color: rgb(202, 197, 197);
-    padding: 10px;
+/* That's for small devices like smartphones in horizontal */
+/* This style will be apply when the screen is between 401 pixels until 767 pixels */
+@media (401px <= width <= 767px) {
+
 }
 
-.loadingMessage {
-    letter-spacing: 2px;
-    text-align: justify;
+/* That's for small devices like tablets in vertical */
+/* This style will be apply when the screen is between 768 pixels until 1023 pixels */
+@media (768px <= width <= 1023px) {
+
 }
 
-/* That's for when the content is loaded */
-.movie {
-    width: 50%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 0.001em solid rgba(128, 128, 128, 0.466);
-    border-radius: 15px;
-    box-shadow: 0.1em 0.1em 50px rgba(129, 126, 126, 0.938);
-    background-color: rgb(202, 197, 197);
-    padding: 6px;
+/* That's for a small device like a tablet in horizontal */
+/* This can be to big devices like laptops or notebooks */
+/* It will be apply when the width is between 1024 pixels until 1439 pixels */
+@media screen and (1024px <= width <= 1439px) {
+
+    .container {
+        width: 100vw;
+        min-height: 82vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(14, 13, 13, 0.945);
+        background-clip: border-box;
+        background-repeat: round;
+        background-size: cover;
+        padding: 1.25em 0em;
+    }
+
+    /* That's for when the content is loading */
+    .contentBox {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 0.01em solid rgba(128, 128, 128, 0.466);
+        border-radius: 1.25em;
+        box-shadow: 0.188em 0.5em 0.5em rgba(129, 126, 126, 0.938);
+        background-color: rgb(202, 197, 197);
+        padding: 0.75em;
+    }
+
+    .loadingMessage {
+        font-size: 1.063em;
+        text-align: center;
+        letter-spacing: 0.094em;
+    }
+
+    /* That's for when the content is loaded */
+    .movie {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 0.01em solid rgba(128, 128, 128, 0.466);
+        border-radius: 0.938em;
+        box-shadow: 0.25em 0.25em 3.75em rgba(129, 126, 126, 0.938);
+        background-color: rgb(202, 197, 197);
+        padding: 0.375em;
+    }
+
+    .movieTitle {
+        font-size: 1.75em;
+        font-weight: 900;
+        font-style: italic;
+        text-align: center;
+        color: #3E6CEC;
+        margin: 0.5em 0em;
+    }
+
+    .poster {
+        width: 100%;
+        height: 45%;
+        border-radius: 1em;
+    }
+
+    .descriptionTitle {
+        font-size: 1.625em;
+        font-weight: 800;
+        text-align: center;
+        letter-spacing: 0.063em;
+        color: #3E6CEC;
+        margin: 0.313em 0em;
+    }
+
+    .descriptionText {
+        font-size: 1.5em;
+        text-align: center;
+        letter-spacing: 0.125em;
+    }
+
+    .releaseDateTitle {
+        font-size: 1.5em;
+        font-weight: 700;
+        letter-spacing: 0.125em;
+        color: #3E6CEC;
+        margin: 0.25em 0em;
+    }
+
+    .releaseDateText {
+        text-align: center;
+        font-size: 1.375em;
+        font-style: italic;
+        font-weight: 600;
+        letter-spacing: 0.125em;
+    }
+
+    /* That's for a favorite movie save button in the list */
+    .saveButton {
+        font-size: 1.125em;
+        font-weight: 500;
+        color: #2F2D7D;
+        background-color: white;
+        padding: 0.5em 0.375em;
+        border: 0.01em solid transparent;
+        border-radius: 1.063em;
+        margin: 0.625em 0em 0.875em;
+    }
+
+    .saveButton:hover {
+        padding: 0.625em 0.5em;
+        color: white;
+        background-color: #2F2D7D;
+        font-weight: 700;
+    }
+
 }
 
-.movieTitle {
-    font-size: 26px;
-    font-weight: 800;
-    font-style: italic;
-}
-
-.poster {
-    width: 100%;
-    height: 45%;
-    border-radius: 20px;
-}
-
-.descriptionTitle {
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.descriptionText {
-    text-indent: 20px;
-    text-align: justify;
-    font-size: 18px;
-    letter-spacing: 2px;
-}
-
-.releaseDateTitle {
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 600;
-    letter-spacing: 4px;
-}
-
-.releaseDateText {
-    font-style: normal;
-}
-
-.saveButton {
-    margin: 10px 0px;
+/* That's for big devices or monitors with a large width */
+/* This style will be apply when the width is equal or bigger than 1024 pixels */
+@media (1440px <= width) {
+    
 }
