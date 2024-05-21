@@ -62,12 +62,12 @@
 
     .disableButtonContainer {
         width: 100%;
-        height: 18%;
+        height: 20%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+        border-bottom: 0.125em solid rgba(255, 255, 255, 0.7);
     }
 
     .disableButtonContainer:hover {
@@ -120,9 +120,227 @@
 
 }
 
+@media (401px <= width <= 549px) {
+
+    .container {
+        width: 100vw;
+        height: 18vh;
+        background-color: rgb(202, 197, 197);
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo, .linkEffect {
+        display: none;
+    }
+
+    .burgerMenu {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .burgerMenu:hover {
+        cursor: pointer;
+    }
+
+    .layer_BurgerMenu {
+        background-color: #3E6CEC;
+        height: 0.375em;
+        width: 55%;
+        border-radius: 0.9375em;
+    }
+
+    .disableAsideMenu {
+        display: none;
+    }
+
+    .activatedAsideMenu {
+        width: 50%;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: #2F2D7D;
+    }
+
+    .disableButtonContainer {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 0.125em solid rgba(255, 255, 255, 0.7);
+    }
+
+    .disableButtonContainer:hover {
+        cursor: pointer;
+    }
+
+    .disableButton_layer {
+        position: absolute;
+        border-radius: 0.9375em;
+        background-color: white;
+    }
+
+    .disableButton_firstLayer {
+        width: 50%;
+        height: 0.625em;
+        transform: rotate(45deg);
+    }
+
+    .disableButton_secondLayer {
+        width: 50%;
+        height: 0.625em;
+        transform: rotate(135deg);
+    }
+
+    .asideMenu_linksList {
+        width: 100%;
+        height: 80%;
+        list-style-type: none;
+    }
+
+    .linkContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0.75em 0em;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+    }
+
+    .link {
+        text-decoration: none;
+        font-size: 1.125em;
+        font-weight: 900;
+        color: white;
+    }
+
+    .navigationArea, .favoriteMoviesButton, .loginButton, .signUpButton {
+        display: none;
+    }
+
+}
+
+@media (550px <= width <= 600px) {
+    
+    .container {
+        width: 100vw;
+        height: 18vh;
+        background-color: rgb(202, 197, 197);
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo, .linkEffect {
+        display: none;
+    }
+
+    .burgerMenu {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .burgerMenu:hover {
+        cursor: pointer;
+    }
+
+    .layer_BurgerMenu {
+        background-color: #3E6CEC;
+        height: 0.375em;
+        width: 55%;
+        border-radius: 0.9375em;
+    }
+
+    .disableAsideMenu {
+        display: none;
+    }
+
+    .activatedAsideMenu {
+        width: 50%;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: #2F2D7D;
+    }
+
+    .disableButtonContainer {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 0.125em solid rgba(255, 255, 255, 0.7);
+    }
+
+    .disableButtonContainer:hover {
+        cursor: pointer;
+    }
+
+    .disableButton_layer {
+        position: absolute;
+        border-radius: 0.9375em;
+        background-color: white;
+    }
+
+    .disableButton_firstLayer {
+        width: 50%;
+        height: 0.75em;
+        transform: rotate(45deg);
+    }
+
+    .disableButton_secondLayer {
+        width: 50%;
+        height: 0.75em;
+        transform: rotate(135deg);
+    }
+
+    .asideMenu_linksList {
+        width: 100%;
+        height: 80%;
+        list-style-type: none;
+    }
+
+    .linkContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0.75em 0em;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+    }
+
+    .link {
+        text-decoration: none;
+        font-size: 1.125em;
+        font-weight: 900;
+        color: white;
+    }
+
+    .navigationArea, .favoriteMoviesButton, .loginButton, .signUpButton {
+        display: none;
+    }
+
+}
+
 /* That's for small devices like smartphones in horizontal */
 /* This style will be apply when the screen is between 401 pixels until 767 pixels */
-@media (401px <= width <= 767px) {
+@media (601px <= width <= 767px) {
 
     .container {
         width: 100vw;
