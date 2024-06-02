@@ -10,8 +10,8 @@
     color: rgba(14, 13, 13, 0.945);
 }
 
-/* That's for small devices like smartphones in vertical */
-/* This style will be apply when the screen is between 320 pixels until 400 pixels */
+/* That's for small mobile devices like smartphones in vertical */
+/* This style will be apply when the screen width is between 320 pixels until 400 pixels */
 @media screen and (320px <= width <= 400px) {
 
     .container {
@@ -132,8 +132,8 @@
 
 }
 
-/* That's for small devices like smartphones in horizontal */
-/* This style will be apply when the screen is between 401 pixels until 767 pixels */
+/* That's for small mobile devices width like smartphones in horizontal */
+/* This style will be apply when the screen width is between 401 pixels until 767 pixels */
 @media (401px <= width <= 767px) {
 
     .container {
@@ -253,8 +253,8 @@
 
 }
 
-/* That's for small devices like tablets in vertical */
-/* This style will be apply when the screen is between 768 pixels until 1023 pixels */
+/* That's for small mobile devices width like tablets in vertical */
+/* This style will be apply when the screen is between 768 pixels until 1024 pixels */
 @media (768px <= width <= 1023px) {
 
     .container {
@@ -373,9 +373,9 @@
 
 }
 
-/* That's for a small device like a tablet in horizontal */
-/* This can be to big devices like laptops or notebooks */
-/* It will be apply when the width is between 1024 pixels until 1439 pixels */
+/* That's for small mobile devices width like tablets in horizontal */
+/* This style can be to medium monitor devices like laptops or notebooks */
+/* It will be apply when the screen width is between 1024 pixels until 1439 pixels */
 @media screen and (1024px <= width <= 1439px) {
 
     .container {
@@ -495,8 +495,8 @@
 
 }
 
-/* That's for big devices or monitors with a large width */
-/* This style will be apply when the width is equal or bigger than 1024 pixels */
+/* That's for big devices or monitors with a large screen width */
+/* This style will be apply when the width is equal or bigger than 1440 pixels */
 @media (1440px <= width) {
 
     .container {

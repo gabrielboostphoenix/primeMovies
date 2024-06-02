@@ -51,6 +51,7 @@ const MoviesExploring = () => {
     useEffect(() => {
 
         const initializeLoad = async () => {
+
             // Using the function to load all of the avaliable movies
             const result = await loadMovies();
             // Saving it
@@ -59,6 +60,7 @@ const MoviesExploring = () => {
             setLoading(false);
             // Setting the pages total from API response
             setPagesTotal(result.total_pages);
+
         };
         initializeLoad();
 
@@ -71,6 +73,7 @@ const MoviesExploring = () => {
     useEffect(() => {
 
         const loadAgain = async () => {
+
             // Using the function to load all of the avaliable movies
             const result = await loadMovies();
             // Saving it
@@ -79,21 +82,24 @@ const MoviesExploring = () => {
             setLoading(false);
             // Setting the pages total from API response
             setPagesTotal(result.total_pages);
+
         };
         loadAgain();
 
     }, [currentPage]);
 
     // Checking if was possible to find the movies to load it
-    if (loading === true) {
+    if (true) {
 
         // Returning a result of loading state to the client
         return (
 
             <main className={Style.container}>
+
                 <article className={Style.contentBox}>
                     <p className={Style.loadingMessage}>OPS! Infelizmente ainda não foi possível carregar os filmes...</p>
                 </article>
+
             </main>
 
         );
@@ -109,6 +115,7 @@ const MoviesExploring = () => {
                     return (
 
                         <article key={index} className={Style.movie}>
+
                             <h2 className={Style.movieTitle}>{item.title}</h2>
                             <img
                                 src={`https://image.tmdb.org/t/p/w1280${item.poster_path}`}
@@ -116,11 +123,14 @@ const MoviesExploring = () => {
                                 className={Style.poster}
                             />
                             <Link to={`/movieView/${item.id}`} className={Style.seeMoreButton}>Ver Mais</Link>
+
                         </article>
 
                     );
                 })}
+
                 <section className={Style.navigationContainer}>
+
                     { currentPage > 1 ? <HiOutlineChevronDoubleLeft className={Style.navigationButton} onClick={(event) => {
 
                         // Setting the default behaviour for this event
@@ -131,17 +141,20 @@ const MoviesExploring = () => {
                         setCurrentPage(currentPageIndex - 1);
 
                     }}/> : false }
+
                     { currentPage < pagesTotal ? <HiOutlineChevronDoubleRight className={Style.navigationButton} onClick={(event) => {
 
                         // Setting the default behaviour for this event
-                        event.preventDefault();    
+                        event.preventDefault();
                         // Creating a new variable where can manipulate the value
                         let currentPageIndex = currentPage;
                         // Setting the current page to go ahead in the navigation system
                         setCurrentPage(currentPageIndex + 1);
 
                     }}/> : false }
+
                 </section>
+
             </main>
 
         );
