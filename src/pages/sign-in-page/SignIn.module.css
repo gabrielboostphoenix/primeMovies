@@ -28,7 +28,7 @@
     grid-area: 5 / 2 / 7 / 10;
 }
 
-/* That's for small devices like smartphones in vertical */
+/* That's for small mobile devices width like smartphones in vertical */
 /* This style will be apply when the screen is between 320 pixels until 400 pixels */
 @media (320px <= width <= 400px) {
 
@@ -50,17 +50,17 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         color: #3E6CEC;
     }
 
     .userEmailField {
         height: 45%;
         width: 100%;
-        border: 0.01em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
-        letter-spacing: 0.05em;
-        padding-left: 0.375em;
+        padding-left: 0.5em;
+        border: 0.001em solid rgba(128, 128, 128, 0.466);
+        border-radius: 0.875em;
+        letter-spacing: 0.038em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 0.875em;
         color: black;
@@ -73,17 +73,17 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         color: #3E6CEC;
     }
 
     .userPasswordField {
         height: 45%;
         width: 100%;
-        border: 0.01em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
-        letter-spacing: 0.05em;
-        padding-left: 0.375em;
+        padding-left: 0.5em;
+        border: 0.001em solid rgba(128, 128, 128, 0.466);
+        border-radius: 0.875em;
+        letter-spacing: 0.038em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 0.875em;
         color: black;
@@ -95,20 +95,20 @@
         grid-area: 8 / 5 / 9 / 7;
         justify-self: center;
         align-self: center;
-        border: 0.01em solid transparent;
+        border: 0.001em solid transparent;
         border-radius: 1.563em;
         box-shadow: 0.938em 0.938em 3.125em rgba(129, 126, 126, 0.938);
         font-size: 1em;
-        font-weight: 600;
+        font-weight: 700;
         color: #3E6CEC;
         background-color: white;
     }
 
 }
 
-/* That's for small devices like smartphones in horizontal */
-/* This style will be apply when the screen is between 401 pixels until 500 pixels */
-@media (401px <= width <= 500px) {
+/* That's for small mobile devices width like smartphones in horizontal */
+/* This style will be apply when the screen is between 401 pixels until 501 pixels */
+@media (401px <= width <= 501px) {
 
     .formContainer {
         width: 85%;
@@ -135,12 +135,12 @@
     .userEmailField {
         width: 100%;
         height: 48%;
-        border: 0.01em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
-        letter-spacing: 0.05em;
+        border: 0.001em solid rgba(128, 128, 128, 0.466);
+        border-radius: 0.875em;
         padding-left: 0.5em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1em;
+        letter-spacing: 0.05em;
         color: black;
     }
 
@@ -158,39 +158,38 @@
     .userPasswordField {
         width: 100%;
         height: 48%;
-        border: 0.01em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
-        letter-spacing: 0.05em;
+        border: 0.001em solid rgba(128, 128, 128, 0.466);
+        border-radius: 0.875em;
         padding-left: 0.5em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1em;
+        letter-spacing: 0.05em;
         color: black;
     }
 
     .sendButton {
         width: 7em;
-        height: 3.25em;
+        height: 3.125em;
         grid-area: 8 / 5 / 9 / 7;
         justify-self: center;
         align-self: center;
-        border: 0.01em solid transparent;
+        border: 0.001em solid transparent;
         border-radius: 1.563em;
         box-shadow: 0.938em 0.938em 3.125em rgba(129, 126, 126, 0.938);
         font-size: 1.125em;
         font-weight: 700;
         color: #3E6CEC;
         background-color: white;
-        cursor: pointer;
     }
 
 }
 
-/* That's for small devices like smartphones in horizontal */
-/* This style will be apply when the screen is between 501 pixels until 600 pixels */
-@media (501px <= width <= 600px) {
+/* That's for small mobile devices width like smartphones in horizontal */
+/* This style will be apply when the screen is between 502 pixels until 602 pixels */
+@media (502px <= width <= 602px) {
 
     .formContainer {
-        width: 80%;
+        width: 85%;
         height: 90%;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
         border-radius: 1.25em;
@@ -201,7 +200,7 @@
     }
 
     .userEmailLabel {
-        margin-left: 0.125em;
+        margin-left: 0.188em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -214,17 +213,17 @@
     .userEmailField {
         width: 100%;
         height: 50%;
+        padding-left: 0.625em;
         border: 0.01em solid rgba(128, 128, 128, 0.466);
         border-radius: 0.75em;
-        letter-spacing: 0.05em;
-        padding-left: 0.625em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.125em;
+        letter-spacing: 0.063em;
         color: black;
     }
 
     .userPasswordLabel {
-        margin-left: 0.125em;
+        margin-left: 0.188em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -237,39 +236,38 @@
     .userPasswordField {
         width: 100%;
         height: 50%;
+        padding-left: 0.625em;
         border: 0.01em solid rgba(128, 128, 128, 0.466);
         border-radius: 0.75em;
-        letter-spacing: 0.05em;
-        padding-left: 0.625em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.125em;
+        letter-spacing: 0.063em;
         color: black;
     }
 
     .sendButton {
-        width: 6.25em;
-        height: 2.5em;
+        width: 7.125em;
+        height: 3.125em;
         grid-area: 8 / 5 / 9 / 7;
         justify-self: center;
         align-self: center;
-        border: 0.01em solid transparent;
+        border: 0.001em solid transparent;
         border-radius: 1.563em;
         box-shadow: 0.938em 0.938em 3.125em rgba(129, 126, 126, 0.938);
-        font-size: 1.125em;
+        font-size: 1.25em;
         font-weight: 700;
         color: #3E6CEC;
         background-color: white;
-        cursor: pointer;
     }
 
 }
 
-/* That's for small devices like smartphones in horizontal */
-/* This style will be apply when the screen is between 601 pixels until 700 pixels */
-@media (601px <= width <= 700px) {
+/* That's for small mobile devices width like smartphones in horizontal */
+/* This style will be apply when the screen is between 603 pixels until 703 pixels */
+@media (603px <= width <= 703px) {
 
     .formContainer {
-        width: 75%;
+        width: 85%;
         height: 90%;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
         border-radius: 1.25em;
@@ -280,6 +278,7 @@
     }
 
     .userEmailLabel {
+        margin-left: 0.188em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -290,17 +289,19 @@
     }
 
     .userEmailField {
-        border: 0.01em solid rgba(128, 128, 128, 0.466);
+        width: 100%;
+        height: 50%;
+        padding-left: 0.75em;
+        border: 0.001em solid rgba(128, 128, 128, 0.466);
         border-radius: 0.75em;
-        letter-spacing: 0.05em;
-        padding-left: 0.375em;
-        margin-right: 0.875em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.25em;
+        letter-spacing: 0.075em;
         color: black;
     }
 
     .userPasswordLabel {
+        margin-left: 0.188em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -311,40 +312,40 @@
     }
 
     .userPasswordField {
-        border: 0.01em solid rgba(128, 128, 128, 0.466);
+        width: 100%;
+        height: 50%;
+        padding-left: 0.75em;
+        border: 0.001em solid rgba(128, 128, 128, 0.466);
         border-radius: 0.75em;
-        letter-spacing: 0.05em;
-        padding-left: 0.375em;
-        margin-right: 0.875em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.25em;
+        letter-spacing: 0.075em;
         color: black;
     }
 
     .sendButton {
-        width: 6.25em;
-        height: 2.5em;
+        width: 7.25em;
+        height: 3.125em;
         grid-area: 8 / 5 / 9 / 7;
         justify-self: center;
         align-self: center;
-        border: 0.01em solid transparent;
+        border: 0.001em solid transparent;
         border-radius: 1.563em;
         box-shadow: 0.938em 0.938em 3.125em rgba(129, 126, 126, 0.938);
-        font-size: 1.25em;
+        font-size: 1.375em;
         font-weight: 800;
         color: #3E6CEC;
         background-color: white;
-        cursor: pointer;
     }
 
 }
 
-/* That's for small devices like smartphones in horizontal */
-/* This style will be apply when the screen is between 700 pixels until 767 pixels */
-@media (701px <= width <= 767px) {
+/* That's for small mobile devices width like smartphones in horizontal */
+/* This style will be apply when the screen is between 704 pixels until 767 pixels */
+@media (704px <= width <= 767px) {
 
     .formContainer {
-        width: 75%;
+        width: 85%;
         height: 90%;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
         border-radius: 1.25em;
@@ -355,6 +356,7 @@
     }
 
     .userEmailLabel {
+        margin-left: 0.25em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -365,17 +367,19 @@
     }
 
     .userEmailField {
-        border: 0.01em solid rgba(128, 128, 128, 0.466);
+        width: 100%;
+        height: 50%;
+        padding-left: 0.875em;
+        border: 0.001em solid rgba(128, 128, 128, 0.466);
         border-radius: 0.75em;
-        padding-left: 0.375em;
-        margin-right: 1em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.375em;
-        letter-spacing: 0.063em;
+        letter-spacing: 0.088em;
         color: black;
     }
 
     .userPasswordLabel {
+        margin-left: 0.25em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -386,50 +390,51 @@
     }
 
     .userPasswordField {
-        border: 0.01em solid rgba(128, 128, 128, 0.466);
+        width: 100%;
+        height: 50%;
+        padding-left: 0.875em;
+        border: 0.001em solid rgba(128, 128, 128, 0.466);
         border-radius: 0.75em;
-        padding-left: 0.375em;
-        margin-right: 1em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.375em;
-        letter-spacing: 0.063em;
+        letter-spacing: 0.088em;
         color: black;
     }
 
     .sendButton {
-        width: 6.25em;
-        height: 2.5em;
+        width: 7.375em;
+        height: 3.125em;
         grid-area: 8 / 5 / 9 / 7;
         justify-self: center;
         align-self: center;
-        border: 0.01em solid transparent;
+        border: 0.001em solid transparent;
         border-radius: 1.563em;
         box-shadow: 0.938em 0.938em 3.125em rgba(129, 126, 126, 0.938);
-        font-size: 1.375em;
+        font-size: 1.5em;
         font-weight: 800;
         color: #3E6CEC;
         background-color: white;
-        cursor: pointer;
     }
 
 }
 
-/* That's for small devices like tablets in vertical */
-/* This style will be apply when the screen is between 768 pixels until 867 pixels */
-@media (768px <= width <= 867px) {
+/* That's for small mobile devices width like tablets in vertical */
+/* This style will be apply when the screen is between 768 pixels until 868 pixels */
+@media (768px <= width <= 868px) {
 
     .formContainer {
-        width: 70%;
-        height: 90%;
+        width: 85%;
+        height: 95%;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
-        border-radius: 1.25em;
         box-shadow: 0.938em 0.938em 3.125em rgba(129, 126, 126, 0.938);
         background-color: rgb(202, 197, 197);
+        border-radius: 1.25em;
         display: grid;
         grid-template: repeat(10, 10%) / repeat(10, 10%);
     }
 
     .userEmailLabel {
+        margin-left: 0.313em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -440,16 +445,19 @@
     }
 
     .userEmailField {
-        border: 0.01em solid rgba(128, 128, 128, 0.466);
+        width: 100%;
+        height: 50%;
+        padding-left: 0.875em;
+        border: 0.001em solid rgba(128, 128, 128, 0.466);
         border-radius: 0.75em;
-        padding-left: 0.375em;
-        margin-right: 1.125em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
+        letter-spacing: 0.1em;
         color: black;
     }
 
     .userPasswordLabel {
+        margin-left: 0.313em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -460,39 +468,40 @@
     }
 
     .userPasswordField {
-        border: 0.01em solid rgba(128, 128, 128, 0.466);
+        width: 100%;
+        height: 50%;
+        padding-left: 0.875em;
+        border: 0.001em solid rgba(128, 128, 128, 0.466);
         border-radius: 0.75em;
-        padding-left: 0.375em;
-        margin-right: 1.125em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
+        letter-spacing: 0.1em;
         color: black;
     }
 
     .sendButton {
-        width: 6.25em;
-        height: 2.5em;
-        grid-area: 9 / 5 / 10 / 7 ;
+        width: 7.5em;
+        height: 3.125em;
+        grid-area: 8 / 5 / 9 / 7;
         justify-self: center;
         align-self: center;
         border: 0.01em solid transparent;
         border-radius: 1.563em;
         box-shadow: 0.938em 0.938em 3.125em rgba(129, 126, 126, 0.938);
-        font-size: 1.5em;
+        font-size: 1.625em;
         font-weight: 800;
         color: #3E6CEC;
         background-color: white;
-        cursor: pointer;
     }
 
 }
 
-/* That's for small devices like tablets in vertical */
-/* This style will be apply when the screen is between 868 pixels until 1023 pixels */
-@media (868px <= width <= 1023px) {
+/* That's for small mobile devices width like tablets in vertical */
+/* This style will be apply when the screen is between 869 pixels until 1023 pixels */
+@media (869px <= width <= 1023px) {
 
     .formContainer {
-        width: 65%;
+        width: 85%;
         height: 90%;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
         border-radius: 1.25em;
@@ -503,6 +512,7 @@
     }
 
     .userEmailLabel {
+        margin-left: 0.375em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -513,17 +523,19 @@
     }
 
     .userEmailField {
-        border: 0.01em solid rgba(128, 128, 128, 0.466);
+        width: 100%;
+        height: 50%;
+        padding-left: 0.875em;
+        border: 0.001em solid rgba(128, 128, 128, 0.466);
         border-radius: 0.75em;
-        letter-spacing: 0.05em;
-        padding-left: 0.375em;
-        margin-right: 1.25em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.625em;
+        letter-spacing: 0.113em;
         color: black;
     }
 
     .userPasswordLabel {
+        margin-left: 0.375em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -534,30 +546,119 @@
     }
 
     .userPasswordField {
+        width: 100%;
+        height: 50%;
+        padding-left: 0.875em;
         border: 0.01em solid rgba(128, 128, 128, 0.466);
         border-radius: 0.75em;
-        letter-spacing: 0.05em;
-        padding-left: 0.375em;
-        margin-right: 1.25em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.625em;
+        letter-spacing: 0.113em;
         color: black;
     }
 
     .sendButton {
-        width: 6.25em;
-        height: 2.5em;
-        grid-area: 9 / 5 / 10 / 7 ;
+        width: 7.625em;
+        height: 2.875em;
+        grid-area: 8 / 5 / 9 / 7 ;
         justify-self: center;
         align-self: center;
-        border: 0.01em solid transparent;
+        border: 0.001em solid transparent;
         border-radius: 1.563em;
         box-shadow: 0.938em 0.938em 3.125em rgba(129, 126, 126, 0.938);
-        font-size: 1.625em;
+        font-size: 1.75em;
         font-weight: 800;
         color: #3E6CEC;
         background-color: white;
+    }
+
+}
+
+/* That's for medium devices width like laptops and notebooks or other monitors */
+/* This style will be apply when the screen width is between 1024 pixels until 1439 pixels */
+@media (1024px <= width <= 1439px) {
+
+    .formContainer {
+        width: 85%;
+        height: 90%;
+        border: 0.001em solid rgba(128, 128, 128, 0.466);
+        border-radius: 1.25em;
+        box-shadow: 0.938em 0.938em 3.125em rgba(129, 126, 126, 0.938);
+        background-color: rgb(202, 197, 197);
+        display: grid;
+        grid-template: repeat(10, 10%) / repeat(10, 10%);
+    }
+
+    .userEmailLabel {
+        margin-left: 0.375em;
+        justify-self: center;
+        align-self: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.75em;
+        font-style: italic;
+        font-weight: 800;
+        color: #3E6CEC;
+    }
+
+    .userEmailField {
+        width: 100%;
+        height: 50%;
+        padding-left: 0.875em;
+        border: 0.001em solid rgba(128, 128, 128, 0.466);
+        border-radius: 0.75em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.625em;
+        letter-spacing: 0.113em;
+        color: black;
+    }
+
+    .userPasswordLabel {
+        margin-left: 0.375em;
+        justify-self: center;
+        align-self: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.75em;
+        font-style: italic;
+        font-weight: 800;
+        color: #3E6CEC;
+    }
+
+    .userPasswordField {
+        width: 100%;
+        height: 50%;
+        padding-left: 0.875em;
+        border: 0.01em solid rgba(128, 128, 128, 0.466);
+        border-radius: 0.75em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.625em;
+        letter-spacing: 0.113em;
+        color: black;
+    }
+
+    .sendButton {
+        width: 7.625em;
+        height: 2.875em;
+        grid-area: 8 / 5 / 9 / 7 ;
+        justify-self: center;
+        align-self: center;
+        border: 0.001em solid transparent;
+        border-radius: 1.563em;
+        box-shadow: 0.938em 0.938em 3.125em rgba(129, 126, 126, 0.938);
+        font-size: 1.75em;
+        font-weight: 800;
+        color: #3E6CEC;
+        background-color: white;
+        transition-timing-function: linear;
+        transition-duration: 0.1s;
+    }
+
+    .sendButton:hover {
+        color: white;
+        background-color: #3E6CEC;
         cursor: pointer;
+        transition-timing-function: linear;
+        transition-duration: 0.2s;
+        transition-delay: 0.1s;
     }
 
 }

@@ -19,8 +19,8 @@
     align-items: center;
 }
 
-/* That's for small devices like smartphones in vertical */
-/* This style will be apply when the screen is between 320 pixels until 400 pixels */
+/* That's for small mobile devices like smartphones in vertical */
+/* This style will be apply when the screen width is between 320 pixels until 400 pixels */
 @media (320px <= width <= 400px) {
 
     .logo, .linkEffect {
@@ -131,6 +131,8 @@
 
 }
 
+/* That's for small mobile devices width like smartphones in horizontal */
+/* This style will be apply when the screen width is between 401 pixels until 549 pixels */
 @media (401px <= width <= 549px) {
 
     .logo, .linkEffect {
@@ -241,6 +243,8 @@
 
 }
 
+/* That's for small mobile devices width like smartphones in horizontal */
+/* This style will be apply when the screen width is between 550 pixels until 600 pixels */
 @media (550px <= width <= 600px) {
 
     .logo, .linkEffect {
@@ -351,8 +355,8 @@
 
 }
 
-/* That's for small devices like smartphones in horizontal */
-/* This style will be apply when the screen is between 401 pixels until 767 pixels */
+/* That's for small mobile devices like smartphones in horizontal */
+/* This style will be apply when the screen width is between 601 pixels until 767 pixels */
 @media (601px <= width <= 767px) {
 
     .container {
@@ -375,7 +379,7 @@
     }
 
     .logo {
-        font-size: 1.375em;
+        font-size: 1.5em;
         font-weight: 700;
         letter-spacing: 0.050em;
         color: #3E6CEC;
@@ -403,8 +407,8 @@
 
 }
 
-/* That's for small devices like tablets in vertical */
-/* This style will be apply when the screen is between 768 pixels until 1023 pixels */
+/* That's for small mobile devices width like tablets in vertical */
+/* This style will be apply when the screen width is between 768 pixels until 1023 pixels */
 @media (768px <= width <= 1023px) {
 
     .burguerMenu, .layer_BurguerMenu {
@@ -417,7 +421,7 @@
     }
 
     .logo {
-        font-size: 1.5em;
+        font-size: 1.75em;
         font-weight: 800;
         letter-spacing: 0.075em;
         color: #3E6CEC;
@@ -445,8 +449,8 @@
 
 }
 
-/* That's for a small device like a tablet in horizontal */
-/* This can be to big devices like laptops or notebooks */
+/* That's for small mobile devices width like tablets in horizontal */
+/* That's for medium devices width like laptops and notebooks or other monitors */
 /* It will be apply when the width is between 1024 pixels until 1439 pixels */
 @media (1024px <= width <= 1439px) {
 
@@ -460,7 +464,7 @@
     }
 
     .logo {
-        font-size: 1.625em;
+        font-size: 1.875em;
         font-weight: 900;
         letter-spacing: 0.075em;
         color: #3E6CEC;
@@ -488,8 +492,8 @@
 
 }
 
-/* That's for big devices or monitors with a large width */
-/* This style will be apply when the width is equal or bigger than 1024 pixels */
+/* That's for big devices width or large monitors */
+/* This style will be apply when the screen width is equal or bigger than 1440 pixels */
 @media (1440px <= width) {
 
     .burguerMenu, .layer_BurguerMenu {

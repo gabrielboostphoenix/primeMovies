@@ -89,7 +89,7 @@ const MoviesExploring = () => {
     }, [currentPage]);
 
     // Checking if was possible to find the movies to load it
-    if (true) {
+    if (loading === true) {
 
         // Returning a result of loading state to the client
         return (
