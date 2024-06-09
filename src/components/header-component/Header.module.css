@@ -375,13 +375,13 @@
 
     .linkEffect {
         text-decoration: none;
-        margin-left: 0.5em;
+        margin-left: 1.125em;
     }
 
     .logo {
-        font-size: 1.5em;
-        font-weight: 700;
-        letter-spacing: 0.050em;
+        font-size: 1.625em;
+        font-weight: 600;
+        letter-spacing: 0.063em;
         color: #3E6CEC;
     }
 
@@ -399,7 +399,7 @@
     }
 
     .favoriteMoviesButton, .loginButton, .signUpButton {
-        font-size: 1.1em;
+        font-size: 1.125em;
         font-weight: 500;
         text-decoration: none;
         color: #0a34a7;
@@ -417,12 +417,12 @@
 
     .linkEffect {
         text-decoration: none;
-        margin-left: 1em;
+        margin-left: 1.25em;
     }
 
     .logo {
         font-size: 1.75em;
-        font-weight: 800;
+        font-weight: 700;
         letter-spacing: 0.075em;
         color: #3E6CEC;
     }
@@ -441,8 +441,8 @@
     }
 
     .favoriteMoviesButton, .loginButton, .signUpButton {
-        font-size: 1.3em;
-        font-weight: 500;
+        font-size: 1.25em;
+        font-weight: 600;
         text-decoration: none;
         color: #0a34a7;
     }
@@ -465,8 +465,8 @@
 
     .logo {
         font-size: 1.875em;
-        font-weight: 900;
-        letter-spacing: 0.075em;
+        font-weight: 800;
+        letter-spacing: 0.088em;
         color: #3E6CEC;
     }
 
@@ -485,7 +485,7 @@
 
     .favoriteMoviesButton, .loginButton, .signUpButton {
         font-size: 1.375em;
-        font-weight: 500;
+        font-weight: 600;
         text-decoration: none;
         color: #0a34a7;
     }
@@ -508,7 +508,7 @@
     .logo {
         font-size: 1.75em;
         font-weight: 900;
-        letter-spacing: 0.085em;
+        letter-spacing: 0.1em;
         color: #3E6CEC;
     }
 
@@ -527,7 +527,7 @@
 
     .favoriteMoviesButton, .loginButton, .signUpButton {
         font-size: 1.5em;
-        font-weight: 500;
+        font-weight: 600;
         text-decoration: none;
         color: #0a34a7;
     }
