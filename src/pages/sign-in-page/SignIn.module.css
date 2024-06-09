@@ -501,7 +501,7 @@
 @media (869px <= width <= 1023px) {
 
     .formContainer {
-        width: 85%;
+        width: 80%;
         height: 90%;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
         border-radius: 1.25em;
@@ -579,7 +579,7 @@
 @media (1024px <= width <= 1124px) {
 
     .formContainer {
-        width: 75%;
+        width: 72%;
         height: 90%;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
         border-radius: 1.25em;
@@ -668,7 +668,7 @@
 @media (1125px <= width <= 1225px) {
 
     .formContainer {
-        width: 70%;
+        width: 66%;
         height: 90%;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
         border-radius: 1.25em;
@@ -757,7 +757,7 @@
 @media (1226px <= width <= 1326px) {
 
     .formContainer {
-        width: 65%;
+        width: 64%;
         height: 90%;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
         border-radius: 1.25em;
