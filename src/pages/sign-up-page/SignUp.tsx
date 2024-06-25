@@ -1,9 +1,16 @@
 // Importing Area
 import Style from './SignUp.module.css';
+import { HiMiniEye, HiMiniEyeSlash } from 'react-icons/hi2';
 import { useState, useEffect } from 'react';
 
 // That's the sign up page component
 const SignUp = () => {
+
+    /*
+        Using a react hook to declare the necessary variables
+    */
+    const [activatedButton, setActiveButton] = useState(false);
+
     return (
 
         <main className={Style.container}>
@@ -23,6 +30,26 @@ const SignUp = () => {
                 <div className={Style.passwordContainer}>
                     <label htmlFor='userPassword' className={Style.userPasswordLabel}>Senha:</label>
                     <input type='password' id='userPassword' className={Style.userPasswordField} placeholder='Crie uma senha para conta' />
+
+                    { activatedButton ? <HiMiniEyeSlash className={Style.showPasswordButton} onClick={(event) => {
+
+                        // Setting the default behaviour of this event
+                        event.preventDefault();
+                        // Setting to disable this icon and active other
+                        // In this case won't appear the password credential
+                        setActiveButton(false);
+
+                        }}/> : <HiMiniEye className={Style.showPasswordButton} onClick={(event) => {
+
+                        // Setting the default behaviour of this event
+                        event.preventDefault();
+                        // Setting to active other icon and disable this
+                        // In this case will appear the password credential
+                        setActiveButton(true);
+                        
+                        }}/>
+                    }
+
                 </div>
 
                 <button type='submit' className={Style.accountCreatingButton}>Criar Conta</button>
