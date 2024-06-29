@@ -21,15 +21,19 @@
 }
 
 .nameContainer {
-    grid-area: 2 / 2 / 3 / 10;
+    grid-area: 2 / 2 / 4 / 10;
 }
 
 .emailContainer {
-    grid-area: 4 / 2 / 5 / 10;
+    grid-area: 4 / 2 / 6 / 10;
 }
 
 .passwordContainer {
-    grid-area: 6 / 2 / 7 / 10;
+    grid-area: 6 / 2 / 8 / 10;
+}
+
+.userNameField:focus, .userEmailField:focus, .userPasswordField:focus {
+    outline: 0;
 }
 
 /* That's for small mobile devices width like smartphones in vertical */
@@ -101,9 +105,21 @@
         color: #3E6CEC;
     }
 
-    .userPasswordField {
+    .passwordAndButtonContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
         height: 2.25em;
+        background-color: white;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
+    }
+
+    .userPasswordField {
+        width: 100%;
+        height: 100%;
         padding-left: 0.375em;
         border: 0.001em solid transparent;
         border-radius: 1em;
@@ -114,9 +130,8 @@
     }
 
     .showPasswordButton {
-        position: relative;
-        top: -58%;
-        left: 88%;
+        font-size: 1.125em;
+        margin-right: 0.5em;
     }
 
     .accountCreatingButton {
@@ -205,6 +220,18 @@
         color: #3E6CEC;
     }
 
+    .passwordAndButtonContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 2.25em;
+        background-color: white;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
+    }
+
     .userPasswordField {
         width: 100%;
         height: 2.25em;
@@ -215,6 +242,11 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1em;
         color: black;
+    }
+
+    .showPasswordButton {
+        font-size: 1.25em;
+        margin-right: 0.625em;
     }
 
     .accountCreatingButton {
@@ -303,9 +335,21 @@
         color: #3E6CEC;
     }
 
+    .passwordAndButtonContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 2.5em;
+        background-color: white;
+        border: 0.001em solid transparent;
+        border-radius: 1.125em;
+    }
+
     .userPasswordField {
         width: 100%;
-        height: 2.25em;
+        height: 100%;
         padding-left: 0.625em;
         border: 0.001em solid transparent;
         border-radius: 1em;
@@ -313,6 +357,11 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.125em;
         color: black;
+    }
+
+    .showPasswordButton {
+        font-size: 1.375em;
+        margin-right: 0.75em;
     }
 
     .accountCreatingButton {
@@ -401,9 +450,21 @@
         color: #3E6CEC;
     }
 
+    .passwordAndButtonContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 2.75em;
+        background-color: white;
+        border: 0.001em solid transparent;
+        border-radius: 1.125em;
+    }
+
     .userPasswordField {
         width: 100%;
-        height: 2.25em;
+        height: 100%;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
         border-radius: 1em;
@@ -411,6 +472,11 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.25em;
         color: black;
+    }
+
+    .showPasswordButton {
+        font-size: 1.625em;
+        margin-right: 0.875em;
     }
 
     .accountCreatingButton {
@@ -499,9 +565,21 @@
         color: #3E6CEC;
     }
 
+    .passwordAndButtonContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 3.125em;
+        background-color: white;
+        border: 0.001em solid transparent;
+        border-radius: 1.25em;
+    }
+
     .userPasswordField {
         width: 100%;
-        height: 2.25em;
+        height: 100%;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
         border-radius: 1em;
@@ -509,6 +587,11 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.375em;
         color: black;
+    }
+
+    .showPasswordButton {
+        font-size: 2em;
+        margin-right: 0.875em;
     }
 
     .accountCreatingButton {
@@ -597,9 +680,21 @@
         color: #3E6CEC;
     }
 
+    .passwordAndButtonContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 3.375em;
+        background-color: white;
+        border: 0.001em solid transparent;
+        border-radius: 1.5em;
+    }
+
     .userPasswordField {
         width: 100%;
-        height: 2.25em;
+        height: 100%;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
         border-radius: 1em;
@@ -607,6 +702,11 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
         color: black;
+    }
+
+    .showPasswordButton {
+        font-size: 2em;
+        margin-right: 1em;
     }
 
     .accountCreatingButton {
@@ -695,6 +795,18 @@
         color: #3E6CEC;
     }
 
+    .passwordAndButtonContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 3.375em;
+        background-color: white;
+        border: 0.001em solid transparent;
+        border-radius: 1.625em;
+    }
+
     .userPasswordField {
         width: 100%;
         height: 2.25em;
@@ -705,6 +817,431 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
         color: rgba(14, 13, 13, 0.945);
+    }
+
+    .showPasswordButton {
+        font-size: 2.25em;
+        margin-right: 1em;
+    }
+
+    .accountCreatingButton {
+        grid-area: 8 / 5 / 11 / 7;
+        align-self: center;
+        justify-self: center;
+        width: 7.5em;
+        height: 2.813em;
+        border: 0.001em solid transparent;
+        border-radius: 1.563em;
+        box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
+        font-size: 1.625em;
+        font-weight: 600;
+        color: #3E6CEC;
+        background-color: white;
+    }
+
+}
+
+/* That's for medium devices width like laptops and notebooks or other monitors */
+/* This style will be apply when the screen width is between 1024 pixels until 1124 pixels */
+@media (1024px <= width <= 1124px) {
+
+    .formContainer {
+        width: 70%;
+        height: 95%;
+        border: 0.001em solid rgba(128, 128, 128, 0.466);
+        border-radius: 0.938em;
+        box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
+        background-color: rgb(202, 197, 197);
+        display: grid;
+        grid-template: repeat(10, 10%) / repeat(10, 10%);
+    }
+
+    .userNameLabel {
+        justify-self: center;
+        align-self: center;
+        margin-left: 0.375em;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1.625em;
+        color: #3E6CEC;
+    }
+
+    .userNameField {
+        width: 100%;
+        height: 2.25em;
+        padding-left: 0.75em;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
+        letter-spacing: 0.138em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+        color: rgba(14, 13, 13, 0.945);
+    }
+
+    .userEmailLabel {
+        justify-self: center;
+        align-self: center;
+        margin-left: 0.375em;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1.625em;
+        color: #3E6CEC;
+    }
+
+    .userEmailField {
+        height: 2.25em;
+        width: 100%;
+        padding-left: 0.75em;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
+        letter-spacing: 0.138em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+        color: rgba(14, 13, 13, 0.945);
+    }
+
+    .userPasswordLabel {
+        justify-self: center;
+        align-self: center;
+        margin-left: 0.375em;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1.625em;
+        color: #3E6CEC;
+    }
+
+    .userPasswordField {
+        width: 100%;
+        height: 2.25em;
+        padding-left: 0.75em;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
+        letter-spacing: 0.138em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+        color: rgba(14, 13, 13, 0.945);
+    }
+
+    .showPasswordButton {
+        position: relative;
+        top: -45%;
+        left: 92%;
+        font-size: 1.75em;
+    }
+
+    .accountCreatingButton {
+        grid-area: 8 / 5 / 11 / 7;
+        align-self: center;
+        justify-self: center;
+        width: 7.5em;
+        height: 2.813em;
+        border: 0.001em solid transparent;
+        border-radius: 1.563em;
+        box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
+        font-size: 1.625em;
+        font-weight: 600;
+        color: #3E6CEC;
+        background-color: white;
+    }
+
+}
+
+/* That's for medium devices width like laptops and notebooks or other monitors */
+/* This style will be apply when the screen width is between 1125 pixels until 1225 pixels */
+@media (1125px <= width <= 1225px) {
+
+    .formContainer {
+        width: 66%;
+        height: 95%;
+        border: 0.001em solid rgba(128, 128, 128, 0.466);
+        border-radius: 0.938em;
+        box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
+        background-color: rgb(202, 197, 197);
+        display: grid;
+        grid-template: repeat(10, 10%) / repeat(10, 10%);
+    }
+
+    .userNameLabel {
+        justify-self: center;
+        align-self: center;
+        margin-left: 0.375em;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1.625em;
+        color: #3E6CEC;
+    }
+
+    .userNameField {
+        width: 100%;
+        height: 2.25em;
+        padding-left: 0.75em;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
+        letter-spacing: 0.138em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+        color: rgba(14, 13, 13, 0.945);
+    }
+
+    .userEmailLabel {
+        justify-self: center;
+        align-self: center;
+        margin-left: 0.375em;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1.625em;
+        color: #3E6CEC;
+    }
+
+    .userEmailField {
+        height: 2.25em;
+        width: 100%;
+        padding-left: 0.75em;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
+        letter-spacing: 0.138em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+        color: rgba(14, 13, 13, 0.945);
+    }
+
+    .userPasswordLabel {
+        justify-self: center;
+        align-self: center;
+        margin-left: 0.375em;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1.625em;
+        color: #3E6CEC;
+    }
+
+    .userPasswordField {
+        width: 100%;
+        height: 2.25em;
+        padding-left: 0.75em;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
+        letter-spacing: 0.138em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+        color: rgba(14, 13, 13, 0.945);
+    }
+
+    .showPasswordButton {
+        position: relative;
+        top: -45%;
+        left: 92%;
+        font-size: 1.75em;
+    }
+
+    .accountCreatingButton {
+        grid-area: 8 / 5 / 11 / 7;
+        align-self: center;
+        justify-self: center;
+        width: 7.5em;
+        height: 2.813em;
+        border: 0.001em solid transparent;
+        border-radius: 1.563em;
+        box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
+        font-size: 1.625em;
+        font-weight: 600;
+        color: #3E6CEC;
+        background-color: white;
+    }
+
+}
+
+/* That's for medium devices width like laptops and notebooks or other monitors */
+/* This style will be apply when the screen width is between 1226 pixels until 1326 pixels */
+@media (1226px <= width <= 1326px) {
+
+    .formContainer {
+        width: 62%;
+        height: 95%;
+        border: 0.001em solid rgba(128, 128, 128, 0.466);
+        border-radius: 0.938em;
+        box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
+        background-color: rgb(202, 197, 197);
+        display: grid;
+        grid-template: repeat(10, 10%) / repeat(10, 10%);
+    }
+
+    .userNameLabel {
+        justify-self: center;
+        align-self: center;
+        margin-left: 0.375em;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1.625em;
+        color: #3E6CEC;
+    }
+
+    .userNameField {
+        width: 100%;
+        height: 2.25em;
+        padding-left: 0.75em;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
+        letter-spacing: 0.138em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+        color: rgba(14, 13, 13, 0.945);
+    }
+
+    .userEmailLabel {
+        justify-self: center;
+        align-self: center;
+        margin-left: 0.375em;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1.625em;
+        color: #3E6CEC;
+    }
+
+    .userEmailField {
+        height: 2.25em;
+        width: 100%;
+        padding-left: 0.75em;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
+        letter-spacing: 0.138em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+        color: rgba(14, 13, 13, 0.945);
+    }
+
+    .userPasswordLabel {
+        justify-self: center;
+        align-self: center;
+        margin-left: 0.375em;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1.625em;
+        color: #3E6CEC;
+    }
+
+    .userPasswordField {
+        width: 100%;
+        height: 2.25em;
+        padding-left: 0.75em;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
+        letter-spacing: 0.138em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+        color: rgba(14, 13, 13, 0.945);
+    }
+
+    .showPasswordButton {
+        position: relative;
+        top: -46%;
+        left: 92%;
+        font-size: 1.875em;
+    }
+
+    .accountCreatingButton {
+        grid-area: 8 / 5 / 11 / 7;
+        align-self: center;
+        justify-self: center;
+        width: 7.5em;
+        height: 2.813em;
+        border: 0.001em solid transparent;
+        border-radius: 1.563em;
+        box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
+        font-size: 1.625em;
+        font-weight: 600;
+        color: #3E6CEC;
+        background-color: white;
+    }
+
+}
+
+/* That's for medium devices width like laptops and notebooks or other monitors */
+/* This style will be apply when the screen width is between 1327 pixels until 1439 pixels */
+@media (1327px <= width <= 1439px) {
+
+    .formContainer {
+        width: 60%;
+        height: 95%;
+        border: 0.001em solid rgba(128, 128, 128, 0.466);
+        border-radius: 0.938em;
+        box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
+        background-color: rgb(202, 197, 197);
+        display: grid;
+        grid-template: repeat(10, 10%) / repeat(10, 10%);
+    }
+
+    .userNameLabel {
+        justify-self: center;
+        align-self: center;
+        margin-left: 0.375em;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1.625em;
+        color: #3E6CEC;
+    }
+
+    .userNameField {
+        width: 100%;
+        height: 2.25em;
+        padding-left: 0.75em;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
+        letter-spacing: 0.138em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+        color: rgba(14, 13, 13, 0.945);
+    }
+
+    .userEmailLabel {
+        justify-self: center;
+        align-self: center;
+        margin-left: 0.375em;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1.625em;
+        color: #3E6CEC;
+    }
+
+    .userEmailField {
+        height: 2.25em;
+        width: 100%;
+        padding-left: 0.75em;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
+        letter-spacing: 0.138em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+        color: rgba(14, 13, 13, 0.945);
+    }
+
+    .userPasswordLabel {
+        justify-self: center;
+        align-self: center;
+        margin-left: 0.375em;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1.625em;
+        color: #3E6CEC;
+    }
+
+    .userPasswordField {
+        width: 100%;
+        height: 2.25em;
+        padding-left: 0.75em;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
+        letter-spacing: 0.138em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+        color: rgba(14, 13, 13, 0.945);
+    }
+
+    .showPasswordButton {
+        position: relative;
+        top: -46%;
+        left: 92%;
+        font-size: 1.875em;
     }
 
     .accountCreatingButton {

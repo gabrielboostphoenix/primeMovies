@@ -28,27 +28,33 @@ const SignUp = () => {
                 </div>
 
                 <div className={Style.passwordContainer}>
+
                     <label htmlFor='userPassword' className={Style.userPasswordLabel}>Senha:</label>
-                    <input type='password' id='userPassword' className={Style.userPasswordField} placeholder='Crie uma senha para conta' />
+                    <div className={Style.passwordAndButtonContainer}>
 
-                    { activatedButton ? <HiMiniEyeSlash className={Style.showPasswordButton} onClick={(event) => {
+                        <input type='password' id='userPassword' className={Style.userPasswordField} placeholder='Crie uma senha para conta' />
 
-                        // Setting the default behaviour of this event
-                        event.preventDefault();
-                        // Setting to disable this icon and active other
-                        // In this case won't appear the password credential
-                        setActiveButton(false);
+                        { activatedButton ? <HiMiniEyeSlash className={Style.showPasswordButton} onClick={(event) => {
 
-                        }}/> : <HiMiniEye className={Style.showPasswordButton} onClick={(event) => {
+                            // Setting the default behaviour of this event
+                            event.preventDefault();
+                            // Setting to disable this icon and active other
+                            // In this case won't appear the password credential
+                            setActiveButton(false);
 
-                        // Setting the default behaviour of this event
-                        event.preventDefault();
-                        // Setting to active other icon and disable this
-                        // In this case will appear the password credential
-                        setActiveButton(true);
-                        
-                        }}/>
-                    }
+                            }}/> : <HiMiniEye className={Style.showPasswordButton} onClick={(event) => {
+
+                            // Setting the default behaviour of this event
+                            event.preventDefault();
+                            // Setting to active other icon and disable this
+                            // In this case will appear the password credential
+                            setActiveButton(true);
+    
+                            }}/>
+
+                        }
+
+                    </div>
 
                 </div>
 
