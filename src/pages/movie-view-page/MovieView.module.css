@@ -365,7 +365,6 @@
     }
 
     .saveButton:hover {
-        padding: 0.625em 0.5em;
         color: white;
         background-color: #2F2D7D;
         font-weight: 700;
@@ -480,6 +479,9 @@
         font-weight: 500;
         color: #2F2D7D;
         background-color: white;
+        transition-timing-function: linear;
+        transition-duration: 0.3s;
+        transition-delay: 0.1s;
         padding: 0.5em 0.375em;
         border: 0.01em solid transparent;
         border-radius: 1.063em;
@@ -487,7 +489,9 @@
     }
 
     .saveButton:hover {
-        padding: 0.625em 0.5em;
+        transform: scale(1.08, 1.06);
+        transition-timing-function: linear;
+        transition-duration: 0.1s;
         color: white;
         background-color: #2F2D7D;
         font-weight: 700;
@@ -600,6 +604,9 @@
         font-weight: 700;
         color: #2F2D7D;
         background-color: white;
+        transition-timing-function: linear;
+        transition-duration: 0.3s;
+        transition-delay: 0.1s;
         padding: 0.625em 0.5em;
         border: 0.01em solid transparent;
         border-radius: 1.063em;
@@ -610,7 +617,9 @@
         font-weight: 900;
         color: white;
         background-color: #2F2D7D;
-        padding: 0.75em 0.625em;
+        transform: scale(1.08, 1.06);
+        transition-timing-function: linear;
+        transition-duration: 0.1s;
     }
 
 }

@@ -21,11 +21,19 @@
 }
 
 .emailContainer {
-    grid-area: 2 / 2 / 4 / 10;
+    grid-area: 2 / 2 / 5 / 10;
 }
 
 .passwordContainer {
-    grid-area: 5 / 2 / 7 / 10;
+    grid-area: 5 / 2 / 8 / 10;
+}
+
+.sendButton {
+    grid-area: 8 / 5 / 10 / 7;
+}
+
+.userEmailField:focus, .userPasswordField:focus {
+    outline: 0;
 }
 
 /* That's for small mobile devices width like smartphones in vertical */
@@ -44,7 +52,7 @@
     }
 
     .userEmailLabel {
-        margin-left: 0.125em;
+        margin-left: 0.625em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -55,11 +63,11 @@
     }
 
     .userEmailField {
-        height: 45%;
+        height: 32%;
         width: 100%;
-        padding-left: 0.5em;
+        padding-left: 0.75em;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.875em;
+        border-radius: 1.25em;
         letter-spacing: 0.038em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 0.875em;
@@ -67,7 +75,7 @@
     }
 
     .userPasswordLabel {
-        margin-left: 0.125em;
+        margin-left: 0.625em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -78,11 +86,11 @@
     }
 
     .userPasswordField {
-        height: 45%;
+        height: 32%;
         width: 100%;
-        padding-left: 0.5em;
+        padding-left: 0.75em;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.875em;
+        border-radius: 1.25em;
         letter-spacing: 0.038em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 0.875em;
@@ -92,7 +100,6 @@
     .sendButton {
         width: 6.875em;
         height: 3.125em;
-        grid-area: 8 / 5 / 9 / 7;
         justify-self: center;
         align-self: center;
         border: 0.001em solid transparent;
@@ -122,7 +129,7 @@
     }
 
     .userEmailLabel {
-        margin-left: 0.125em;
+        margin-left: 0.75em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -134,10 +141,10 @@
 
     .userEmailField {
         width: 100%;
-        height: 48%;
+        height: 36%;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.875em;
-        padding-left: 0.5em;
+        border-radius: 1.375em;
+        padding-left: 0.75em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1em;
         letter-spacing: 0.05em;
@@ -145,7 +152,7 @@
     }
 
     .userPasswordLabel {
-        margin-left: 0.125em;
+        margin-left: 0.75em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -157,10 +164,10 @@
 
     .userPasswordField {
         width: 100%;
-        height: 48%;
+        height: 36%;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.875em;
-        padding-left: 0.5em;
+        border-radius: 1.375em;
+        padding-left: 0.75em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1em;
         letter-spacing: 0.05em;
@@ -168,9 +175,8 @@
     }
 
     .sendButton {
-        width: 7em;
-        height: 3.125em;
-        grid-area: 8 / 5 / 9 / 7;
+        width: 6.5em;
+        height: 2.75em;
         justify-self: center;
         align-self: center;
         border: 0.001em solid transparent;
@@ -200,7 +206,7 @@
     }
 
     .userEmailLabel {
-        margin-left: 0.188em;
+        margin-left: 0.625em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -212,10 +218,10 @@
 
     .userEmailField {
         width: 100%;
-        height: 50%;
-        padding-left: 0.625em;
+        height: 38%;
+        padding-left: 0.75em;
         border: 0.01em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
+        border-radius: 1.5em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.125em;
         letter-spacing: 0.063em;
@@ -223,7 +229,7 @@
     }
 
     .userPasswordLabel {
-        margin-left: 0.188em;
+        margin-left: 0.625em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -235,10 +241,10 @@
 
     .userPasswordField {
         width: 100%;
-        height: 50%;
-        padding-left: 0.625em;
+        height: 38%;
+        padding-left: 0.75em;
         border: 0.01em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
+        border-radius: 1.5em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.125em;
         letter-spacing: 0.063em;
@@ -247,8 +253,7 @@
 
     .sendButton {
         width: 7.125em;
-        height: 3.125em;
-        grid-area: 8 / 5 / 9 / 7;
+        height: 2.875em;
         justify-self: center;
         align-self: center;
         border: 0.001em solid transparent;
@@ -278,7 +283,7 @@
     }
 
     .userEmailLabel {
-        margin-left: 0.188em;
+        margin-left: 0.625em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -290,10 +295,10 @@
 
     .userEmailField {
         width: 100%;
-        height: 50%;
+        height: 40%;
         padding-left: 0.75em;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
+        border-radius: 1.625em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.25em;
         letter-spacing: 0.075em;
@@ -301,7 +306,7 @@
     }
 
     .userPasswordLabel {
-        margin-left: 0.188em;
+        margin-left: 0.625em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -313,10 +318,10 @@
 
     .userPasswordField {
         width: 100%;
-        height: 50%;
+        height: 40%;
         padding-left: 0.75em;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
+        border-radius: 1.625em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.25em;
         letter-spacing: 0.075em;
@@ -324,9 +329,8 @@
     }
 
     .sendButton {
-        width: 7.25em;
-        height: 3.125em;
-        grid-area: 8 / 5 / 9 / 7;
+        width: 6.5em;
+        height: 2.625em;
         justify-self: center;
         align-self: center;
         border: 0.001em solid transparent;
@@ -356,7 +360,7 @@
     }
 
     .userEmailLabel {
-        margin-left: 0.25em;
+        margin-left: 0.625em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -368,10 +372,10 @@
 
     .userEmailField {
         width: 100%;
-        height: 50%;
+        height: 42%;
         padding-left: 0.875em;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
+        border-radius: 1.75em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.375em;
         letter-spacing: 0.088em;
@@ -379,7 +383,7 @@
     }
 
     .userPasswordLabel {
-        margin-left: 0.25em;
+        margin-left: 0.625em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -391,10 +395,10 @@
 
     .userPasswordField {
         width: 100%;
-        height: 50%;
+        height: 42%;
         padding-left: 0.875em;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
+        border-radius: 1.75em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.375em;
         letter-spacing: 0.088em;
@@ -402,9 +406,8 @@
     }
 
     .sendButton {
-        width: 7.375em;
-        height: 3.125em;
-        grid-area: 8 / 5 / 9 / 7;
+        width: 6.875em;
+        height: 2.625em;
         justify-self: center;
         align-self: center;
         border: 0.001em solid transparent;
@@ -434,7 +437,7 @@
     }
 
     .userEmailLabel {
-        margin-left: 0.313em;
+        margin-left: 0.5em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -446,10 +449,10 @@
 
     .userEmailField {
         width: 100%;
-        height: 50%;
+        height: 40%;
         padding-left: 0.875em;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
+        border-radius: 1.875em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
         letter-spacing: 0.1em;
@@ -457,7 +460,7 @@
     }
 
     .userPasswordLabel {
-        margin-left: 0.313em;
+        margin-left: 0.5em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -469,10 +472,10 @@
 
     .userPasswordField {
         width: 100%;
-        height: 50%;
+        height: 40%;
         padding-left: 0.875em;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
+        border-radius: 1.875em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
         letter-spacing: 0.1em;
@@ -480,9 +483,8 @@
     }
 
     .sendButton {
-        width: 7.5em;
-        height: 3.125em;
-        grid-area: 8 / 5 / 9 / 7;
+        width: 6.875em;
+        height: 2.625em;
         justify-self: center;
         align-self: center;
         border: 0.01em solid transparent;
@@ -512,7 +514,7 @@
     }
 
     .userEmailLabel {
-        margin-left: 0.375em;
+        margin-left: 0.625em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -524,10 +526,10 @@
 
     .userEmailField {
         width: 100%;
-        height: 50%;
+        height: 42%;
         padding-left: 0.875em;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
+        border-radius: 1.875em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.625em;
         letter-spacing: 0.113em;
@@ -535,7 +537,7 @@
     }
 
     .userPasswordLabel {
-        margin-left: 0.375em;
+        margin-left: 0.625em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -547,10 +549,10 @@
 
     .userPasswordField {
         width: 100%;
-        height: 50%;
+        height: 42%;
         padding-left: 0.875em;
         border: 0.01em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
+        border-radius: 1.875em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.625em;
         letter-spacing: 0.113em;
@@ -558,9 +560,8 @@
     }
 
     .sendButton {
-        width: 7.625em;
-        height: 2.875em;
-        grid-area: 8 / 5 / 9 / 7 ;
+        width: 5.875em;
+        height: 2.25em;
         justify-self: center;
         align-self: center;
         border: 0.001em solid transparent;
@@ -590,7 +591,7 @@
     }
 
     .userEmailLabel {
-        margin-left: 0.375em;
+        margin-left: 0.625em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -602,10 +603,10 @@
 
     .userEmailField {
         width: 100%;
-        height: 50%;
+        height: 44%;
         padding-left: 0.875em;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
+        border-radius: 2.5em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.625em;
         letter-spacing: 0.113em;
@@ -613,7 +614,7 @@
     }
 
     .userPasswordLabel {
-        margin-left: 0.375em;
+        margin-left: 0.625em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -625,10 +626,10 @@
 
     .userPasswordField {
         width: 100%;
-        height: 50%;
+        height: 44%;
         padding-left: 0.875em;
         border: 0.01em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
+        border-radius: 2.5em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.625em;
         letter-spacing: 0.113em;
@@ -636,9 +637,8 @@
     }
 
     .sendButton {
-        width: 7.625em;
-        height: 2.875em;
-        grid-area: 8 / 5 / 9 / 7 ;
+        width: 6.25em;
+        height: 2.5em;
         justify-self: center;
         align-self: center;
         border: 0.001em solid transparent;
@@ -656,6 +656,7 @@
         color: white;
         background-color: #3E6CEC;
         cursor: pointer;
+        transform: scale(1.03, 1.09);
         transition-timing-function: linear;
         transition-duration: 0.2s;
         transition-delay: 0.1s;
@@ -679,7 +680,7 @@
     }
 
     .userEmailLabel {
-        margin-left: 0.375em;
+        margin-left: 0.625em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -691,10 +692,10 @@
 
     .userEmailField {
         width: 100%;
-        height: 50%;
+        height: 46%;
         padding-left: 0.875em;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
+        border-radius: 2.5em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.625em;
         letter-spacing: 0.113em;
@@ -702,7 +703,7 @@
     }
 
     .userPasswordLabel {
-        margin-left: 0.375em;
+        margin-left: 0.625em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -714,10 +715,10 @@
 
     .userPasswordField {
         width: 100%;
-        height: 50%;
+        height: 46%;
         padding-left: 0.875em;
         border: 0.01em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
+        border-radius: 2.5em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.625em;
         letter-spacing: 0.113em;
@@ -725,9 +726,8 @@
     }
 
     .sendButton {
-        width: 7.625em;
-        height: 2.875em;
-        grid-area: 8 / 5 / 9 / 7 ;
+        width: 6em;
+        height: 2.5em;
         justify-self: center;
         align-self: center;
         border: 0.001em solid transparent;
@@ -745,6 +745,7 @@
         color: white;
         background-color: #3E6CEC;
         cursor: pointer;
+        transform: scale(1.03, 1.09);
         transition-timing-function: linear;
         transition-duration: 0.2s;
         transition-delay: 0.1s;
@@ -768,7 +769,7 @@
     }
 
     .userEmailLabel {
-        margin-left: 0.375em;
+        margin-left: 0.625em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -780,10 +781,10 @@
 
     .userEmailField {
         width: 100%;
-        height: 50%;
+        height: 46%;
         padding-left: 0.875em;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
+        border-radius: 2.75em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.625em;
         letter-spacing: 0.113em;
@@ -791,7 +792,7 @@
     }
 
     .userPasswordLabel {
-        margin-left: 0.375em;
+        margin-left: 0.625em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -803,10 +804,10 @@
 
     .userPasswordField {
         width: 100%;
-        height: 50%;
+        height: 46%;
         padding-left: 0.875em;
         border: 0.01em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
+        border-radius: 2.75em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.625em;
         letter-spacing: 0.113em;
@@ -814,9 +815,8 @@
     }
 
     .sendButton {
-        width: 7.625em;
-        height: 2.875em;
-        grid-area: 8 / 5 / 9 / 7 ;
+        width: 6em;
+        height: 2.5em;
         justify-self: center;
         align-self: center;
         border: 0.001em solid transparent;
@@ -834,6 +834,7 @@
         color: white;
         background-color: #3E6CEC;
         cursor: pointer;
+        transform: scale(1.04, 1.1);
         transition-timing-function: linear;
         transition-duration: 0.2s;
         transition-delay: 0.1s;
@@ -857,7 +858,7 @@
     }
 
     .userEmailLabel {
-        margin-left: 0.375em;
+        margin-left: 0.625em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -869,10 +870,10 @@
 
     .userEmailField {
         width: 100%;
-        height: 50%;
+        height: 46%;
         padding-left: 0.875em;
         border: 0.001em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
+        border-radius: 3em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.625em;
         letter-spacing: 0.113em;
@@ -880,7 +881,7 @@
     }
 
     .userPasswordLabel {
-        margin-left: 0.375em;
+        margin-left: 0.625em;
         justify-self: center;
         align-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -892,10 +893,10 @@
 
     .userPasswordField {
         width: 100%;
-        height: 50%;
+        height: 46%;
         padding-left: 0.875em;
         border: 0.01em solid rgba(128, 128, 128, 0.466);
-        border-radius: 0.75em;
+        border-radius: 3em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.625em;
         letter-spacing: 0.113em;
@@ -903,9 +904,8 @@
     }
 
     .sendButton {
-        width: 7.625em;
-        height: 2.875em;
-        grid-area: 8 / 5 / 9 / 7 ;
+        width: 6.25em;
+        height: 2.625em;
         justify-self: center;
         align-self: center;
         border: 0.001em solid transparent;
@@ -923,6 +923,7 @@
         color: white;
         background-color: #3E6CEC;
         cursor: pointer;
+        transform: scale(1.04, 1.10);
         transition-timing-function: linear;
         transition-duration: 0.2s;
         transition-delay: 0.1s;
