@@ -22,17 +22,14 @@
 
 .nameContainer {
     grid-area: 2 / 2 / 4 / 10;
-    border: 1px solid red;
 }
 
 .emailContainer {
     grid-area: 4 / 2 / 6 / 10;
-    border: 1px solid red;
 }
 
 .passwordContainer {
     grid-area: 6 / 2 / 8 / 10;
-    border: 1px solid red;
 }
 
 .userNameField:focus, .userEmailField:focus, .userPasswordField:focus {
@@ -632,7 +629,7 @@
     .userNameLabel {
         justify-self: center;
         align-self: center;
-        margin-left: 0.375em;
+        margin-left: 0.75em;
         font-style: italic;
         font-weight: 600;
         font-size: 1.625em;
@@ -644,7 +641,7 @@
         height: 2.25em;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
-        border-radius: 1em;
+        border-radius: 1.875em;
         letter-spacing: 0.138em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
@@ -654,7 +651,7 @@
     .userEmailLabel {
         justify-self: center;
         align-self: center;
-        margin-left: 0.375em;
+        margin-left: 0.75em;
         font-style: italic;
         font-weight: 600;
         font-size: 1.625em;
@@ -666,7 +663,7 @@
         height: 2.25em;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
-        border-radius: 1em;
+        border-radius: 1.875em;
         letter-spacing: 0.138em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
@@ -676,7 +673,7 @@
     .userPasswordLabel {
         justify-self: center;
         align-self: center;
-        margin-left: 0.375em;
+        margin-left: 0.75em;
         font-style: italic;
         font-weight: 600;
         font-size: 1.625em;
@@ -692,7 +689,7 @@
         height: 3.375em;
         background-color: white;
         border: 0.001em solid transparent;
-        border-radius: 1.5em;
+        border-radius: 1.875em;
     }
 
     .userPasswordField {
@@ -700,7 +697,7 @@
         height: 100%;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
-        border-radius: 1em;
+        border-radius: 1.875em;
         letter-spacing: 0.138em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
@@ -708,7 +705,7 @@
     }
 
     .showPasswordButton {
-        font-size: 2em;
+        font-size: 2.125em;
         margin-right: 1em;
     }
 
@@ -717,7 +714,7 @@
         align-self: center;
         justify-self: center;
         width: 7.5em;
-        height: 2.813em;
+        height: 2.5em;
         border: 0.001em solid transparent;
         border-radius: 1.563em;
         box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
@@ -747,7 +744,7 @@
     .userNameLabel {
         justify-self: center;
         align-self: center;
-        margin-left: 0.375em;
+        margin-left: 0.75em;
         font-style: italic;
         font-weight: 600;
         font-size: 1.625em;
@@ -759,7 +756,7 @@
         height: 2.25em;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
-        border-radius: 1em;
+        border-radius: 1.875em;
         letter-spacing: 0.138em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
@@ -769,7 +766,7 @@
     .userEmailLabel {
         justify-self: center;
         align-self: center;
-        margin-left: 0.375em;
+        margin-left: 0.75em;
         font-style: italic;
         font-weight: 600;
         font-size: 1.625em;
@@ -781,7 +778,7 @@
         width: 100%;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
-        border-radius: 1em;
+        border-radius: 1.875em;
         letter-spacing: 0.138em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
@@ -791,7 +788,7 @@
     .userPasswordLabel {
         justify-self: center;
         align-self: center;
-        margin-left: 0.375em;
+        margin-left: 0.75em;
         font-style: italic;
         font-weight: 600;
         font-size: 1.625em;
@@ -807,15 +804,15 @@
         height: 3.375em;
         background-color: white;
         border: 0.001em solid transparent;
-        border-radius: 1.625em;
+        border-radius: 1.875em;
     }
 
     .userPasswordField {
         width: 100%;
-        height: 2.25em;
+        height: 100%;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
-        border-radius: 1em;
+        border-radius: 1.875em;
         letter-spacing: 0.138em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
@@ -832,7 +829,7 @@
         align-self: center;
         justify-self: center;
         width: 7.5em;
-        height: 2.813em;
+        height: 2.5em;
         border: 0.001em solid transparent;
         border-radius: 1.563em;
         box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
@@ -862,7 +859,7 @@
     .userNameLabel {
         justify-self: center;
         align-self: center;
-        margin-left: 0.375em;
+        margin-left: 0.75em;
         font-style: italic;
         font-weight: 600;
         font-size: 1.625em;
@@ -874,7 +871,7 @@
         height: 2.25em;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
-        border-radius: 1em;
+        border-radius: 2em;
         letter-spacing: 0.138em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
@@ -884,7 +881,7 @@
     .userEmailLabel {
         justify-self: center;
         align-self: center;
-        margin-left: 0.375em;
+        margin-left: 0.75em;
         font-style: italic;
         font-weight: 600;
         font-size: 1.625em;
@@ -896,7 +893,7 @@
         width: 100%;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
-        border-radius: 1em;
+        border-radius: 2em;
         letter-spacing: 0.138em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
@@ -906,19 +903,31 @@
     .userPasswordLabel {
         justify-self: center;
         align-self: center;
-        margin-left: 0.375em;
+        margin-left: 0.75em;
         font-style: italic;
         font-weight: 600;
         font-size: 1.625em;
         color: #3E6CEC;
     }
 
+    .passwordAndButtonContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 3.375em;
+        background-color: white;
+        border: 0.001em solid transparent;
+        border-radius: 2em;
+    }
+
     .userPasswordField {
         width: 100%;
-        height: 2.25em;
+        height: 100%;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
-        border-radius: 1em;
+        border-radius: 2em;
         letter-spacing: 0.138em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
@@ -926,10 +935,12 @@
     }
 
     .showPasswordButton {
-        position: relative;
-        top: -45%;
-        left: 92%;
-        font-size: 1.75em;
+        font-size: 2.25em;
+        margin-right: 1em;
+    }
+
+    .showPasswordButton:hover {
+        cursor: pointer;
     }
 
     .accountCreatingButton {
@@ -937,7 +948,7 @@
         align-self: center;
         justify-self: center;
         width: 7.5em;
-        height: 2.813em;
+        height: 2.625em;
         border: 0.001em solid transparent;
         border-radius: 1.563em;
         box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
@@ -945,6 +956,18 @@
         font-weight: 600;
         color: #3E6CEC;
         background-color: white;
+        transition-timing-function: linear;
+        transition-duration: 0.1s;
+    }
+
+    .accountCreatingButton:hover {
+        color: white;
+        background-color: #3E6CEC;
+        cursor: pointer;
+        transform: scale(1.05, 1.1);
+        transition-timing-function: linear;
+        transition-duration: 0.2s;
+        transition-delay: 0.1s;
     }
 
 }
@@ -967,7 +990,7 @@
     .userNameLabel {
         justify-self: center;
         align-self: center;
-        margin-left: 0.375em;
+        margin-left: 0.75em;
         font-style: italic;
         font-weight: 600;
         font-size: 1.625em;
@@ -979,7 +1002,7 @@
         height: 2.25em;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
-        border-radius: 1em;
+        border-radius: 2em;
         letter-spacing: 0.138em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
@@ -989,7 +1012,7 @@
     .userEmailLabel {
         justify-self: center;
         align-self: center;
-        margin-left: 0.375em;
+        margin-left: 0.75em;
         font-style: italic;
         font-weight: 600;
         font-size: 1.625em;
@@ -1001,7 +1024,7 @@
         width: 100%;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
-        border-radius: 1em;
+        border-radius: 2em;
         letter-spacing: 0.138em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
@@ -1011,19 +1034,31 @@
     .userPasswordLabel {
         justify-self: center;
         align-self: center;
-        margin-left: 0.375em;
+        margin-left: 0.75em;
         font-style: italic;
         font-weight: 600;
         font-size: 1.625em;
         color: #3E6CEC;
     }
 
+    .passwordAndButtonContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 3.375em;
+        background-color: white;
+        border: 0.001em solid transparent;
+        border-radius: 2em;
+    }
+
     .userPasswordField {
         width: 100%;
-        height: 2.25em;
+        height: 100%;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
-        border-radius: 1em;
+        border-radius: 2em;
         letter-spacing: 0.138em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
@@ -1031,10 +1066,12 @@
     }
 
     .showPasswordButton {
-        position: relative;
-        top: -45%;
-        left: 92%;
-        font-size: 1.75em;
+        font-size: 2.25em;
+        margin-right: 1em;
+    }
+
+    .showPasswordButton:hover {
+        cursor: pointer;
     }
 
     .accountCreatingButton {
@@ -1042,7 +1079,7 @@
         align-self: center;
         justify-self: center;
         width: 7.5em;
-        height: 2.813em;
+        height: 2.75em;
         border: 0.001em solid transparent;
         border-radius: 1.563em;
         box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
@@ -1050,6 +1087,18 @@
         font-weight: 600;
         color: #3E6CEC;
         background-color: white;
+        transition-timing-function: linear;
+        transition-duration: 0.1s;
+    }
+
+    .accountCreatingButton:hover {
+        color: white;
+        background-color: #3E6CEC;
+        cursor: pointer;
+        transform: scale(1.05, 1.1);
+        transition-timing-function: linear;
+        transition-duration: 0.2s;
+        transition-delay: 0.1s;
     }
 
 }
@@ -1072,7 +1121,7 @@
     .userNameLabel {
         justify-self: center;
         align-self: center;
-        margin-left: 0.375em;
+        margin-left: 0.75em;
         font-style: italic;
         font-weight: 600;
         font-size: 1.625em;
@@ -1084,7 +1133,7 @@
         height: 2.25em;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
-        border-radius: 1em;
+        border-radius: 2em;
         letter-spacing: 0.138em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
@@ -1094,7 +1143,7 @@
     .userEmailLabel {
         justify-self: center;
         align-self: center;
-        margin-left: 0.375em;
+        margin-left: 0.75em;
         font-style: italic;
         font-weight: 600;
         font-size: 1.625em;
@@ -1106,7 +1155,7 @@
         width: 100%;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
-        border-radius: 1em;
+        border-radius: 2em;
         letter-spacing: 0.138em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
@@ -1116,11 +1165,23 @@
     .userPasswordLabel {
         justify-self: center;
         align-self: center;
-        margin-left: 0.375em;
+        margin-left: 0.75em;
         font-style: italic;
         font-weight: 600;
         font-size: 1.625em;
         color: #3E6CEC;
+    }
+
+    .passwordAndButtonContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 3.375em;
+        background-color: white;
+        border: 0.001em solid transparent;
+        border-radius: 2em;
     }
 
     .userPasswordField {
@@ -1128,7 +1189,7 @@
         height: 2.25em;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
-        border-radius: 1em;
+        border-radius: 2em;
         letter-spacing: 0.138em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
@@ -1136,10 +1197,12 @@
     }
 
     .showPasswordButton {
-        position: relative;
-        top: -46%;
-        left: 92%;
-        font-size: 1.875em;
+        font-size: 2.25em;
+        margin-right: 1em;
+    }
+
+    .showPasswordButton:hover {
+        cursor: pointer;
     }
 
     .accountCreatingButton {
@@ -1147,7 +1210,7 @@
         align-self: center;
         justify-self: center;
         width: 7.5em;
-        height: 2.813em;
+        height: 2.75em;
         border: 0.001em solid transparent;
         border-radius: 1.563em;
         box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
@@ -1155,6 +1218,18 @@
         font-weight: 600;
         color: #3E6CEC;
         background-color: white;
+        transition-timing-function: linear;
+        transition-duration: 0.1s;
+    }
+
+    .accountCreatingButton:hover {
+        color: white;
+        background-color: #3E6CEC;
+        cursor: pointer;
+        transform: scale(1.05, 1.1);
+        transition-timing-function: linear;
+        transition-duration: 0.2s;
+        transition-delay: 0.1s;
     }
 
 }
@@ -1177,7 +1252,7 @@
     .userNameLabel {
         justify-self: center;
         align-self: center;
-        margin-left: 0.375em;
+        margin-left: 0.75em;
         font-style: italic;
         font-weight: 600;
         font-size: 1.625em;
@@ -1189,7 +1264,7 @@
         height: 2.25em;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
-        border-radius: 1em;
+        border-radius: 2em;
         letter-spacing: 0.138em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
@@ -1199,7 +1274,7 @@
     .userEmailLabel {
         justify-self: center;
         align-self: center;
-        margin-left: 0.375em;
+        margin-left: 0.75em;
         font-style: italic;
         font-weight: 600;
         font-size: 1.625em;
@@ -1211,7 +1286,7 @@
         width: 100%;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
-        border-radius: 1em;
+        border-radius: 2em;
         letter-spacing: 0.138em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
@@ -1221,19 +1296,31 @@
     .userPasswordLabel {
         justify-self: center;
         align-self: center;
-        margin-left: 0.375em;
+        margin-left: 0.75em;
         font-style: italic;
         font-weight: 600;
         font-size: 1.625em;
         color: #3E6CEC;
     }
 
+    .passwordAndButtonContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 3.375em;
+        background-color: white;
+        border: 0.001em solid transparent;
+        border-radius: 2em;
+    }
+
     .userPasswordField {
         width: 100%;
-        height: 2.25em;
+        height: 100%;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
-        border-radius: 1em;
+        border-radius: 2em;
         letter-spacing: 0.138em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.5em;
@@ -1241,10 +1328,12 @@
     }
 
     .showPasswordButton {
-        position: relative;
-        top: -46%;
-        left: 92%;
-        font-size: 1.875em;
+        font-size: 2.25em;
+        margin-right: 1em;
+    }
+
+    .showPasswordButton:hover {
+        cursor: pointer;
     }
 
     .accountCreatingButton {
@@ -1260,6 +1349,18 @@
         font-weight: 600;
         color: #3E6CEC;
         background-color: white;
+        transition-timing-function: linear;
+        transition-duration: 0.1s;
+    }
+
+    .accountCreatingButton:hover {
+        color: white;
+        background-color: #3E6CEC;
+        cursor: pointer;
+        transform: scale(1.05, 1.1);
+        transition-timing-function: linear;
+        transition-duration: 0.2s;
+        transition-delay: 0.1s;
     }
 
 }
