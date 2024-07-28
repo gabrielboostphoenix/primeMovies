@@ -56,14 +56,14 @@
         align-self: center;
         margin-left: 0.625em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1em;
         color: #3E6CEC;
     }
 
     .userNameField {
         width: 100%;
-        height: 2.25em;
+        height: 2.5em;
         padding-left: 0.625em;
         border: 0.001em solid transparent;
         border-radius: 1.25em;
@@ -78,14 +78,14 @@
         align-self: center;
         margin-left: 0.625em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1em;
         color: #3E6CEC;
     }
 
     .userEmailField {
         width: 100%;
-        height: 2.25em;
+        height: 2.5em;
         padding-left: 0.625em;
         border: 0.001em solid transparent;
         border-radius: 1.25em;
@@ -100,7 +100,7 @@
         align-self: center;
         margin-left: 0.625em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1em;
         color: #3E6CEC;
     }
@@ -111,14 +111,14 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 1.969em;
+        height: 2.188em;
         background-color: white;
         border: 0.001em solid transparent;
         border-radius: 1.25em;
     }
 
     .userPasswordField {
-        width: 100%;
+        width: 90%;
         height: 100%;
         padding-left: 0.625em;
         border: 0.001em solid transparent;
@@ -131,7 +131,7 @@
 
     .showPasswordButton {
         font-size: 1.125em;
-        margin-right: 0.5em;
+        margin-right: 0.75em;
     }
 
     .accountCreatingButton {
@@ -139,12 +139,12 @@
         align-self: center;
         justify-self: center;
         width: 7.5em;
-        height: 2.75em;
+        height: 2.875em;
         border: 0.001em solid transparent;
         border-radius: 1.875em;
         box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
         font-size: 1em;
-        font-weight: 600;
+        font-weight: 700;
         color: #3E6CEC;
         background-color: white;
     }
@@ -171,14 +171,14 @@
         align-self: center;
         margin-left: 0.5em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.125em;
         color: #3E6CEC;
     }
 
     .userNameField {
         width: 100%;
-        height: 2.25em;
+        height: 2.375em;
         padding-left: 0.625em;
         border: 0.001em solid transparent;
         border-radius: 1.5em;
@@ -193,14 +193,14 @@
         align-self: center;
         margin-left: 0.5em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.125em;
         color: #3E6CEC;
     }
 
     .userEmailField {
         width: 100%;
-        height: 2.25em;
+        height: 2.375em;
         padding-left: 0.625em;
         border: 0.001em solid transparent;
         border-radius: 1.5em;
@@ -215,7 +215,7 @@
         align-self: center;
         margin-left: 0.5em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.125em;
         color: #3E6CEC;
     }
@@ -226,14 +226,14 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 2.25em;
+        height: 2.375em;
         background-color: white;
         border: 0.001em solid transparent;
         border-radius: 1.5em;
     }
 
     .userPasswordField {
-        width: 100%;
+        width: 90%;
         height: 100%;
         padding-left: 0.625em;
         border: 0.001em solid transparent;
@@ -246,7 +246,7 @@
 
     .showPasswordButton {
         font-size: 1.25em;
-        margin-right: 0.625em;
+        margin-right: 0.75em;
     }
 
     .accountCreatingButton {
@@ -254,12 +254,12 @@
         align-self: center;
         justify-self: center;
         width: 7.5em;
-        height: 2.75em;
+        height: 2.778em;
         border: 0.001em solid transparent;
         border-radius: 2.125em;
         box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
         font-size: 1.125em;
-        font-weight: 600;
+        font-weight: 700;
         color: #3E6CEC;
         background-color: white;
     }
@@ -286,14 +286,14 @@
         align-self: center;
         margin-left: 0.5em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.25em;
         color: #3E6CEC;
     }
 
     .userNameField {
         width: 100%;
-        height: 2.25em;
+        height: 2.333em;
         padding-left: 0.625em;
         border: 0.001em solid transparent;
         border-radius: 1.625em;
@@ -308,14 +308,14 @@
         align-self: center;
         margin-left: 0.5em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.25em;
         color: #3E6CEC;
     }
 
     .userEmailField {
         width: 100%;
-        height: 2.25em;
+        height: 2.333em;
         padding-left: 0.625em;
         border: 0.001em solid transparent;
         border-radius: 1.625em;
@@ -330,7 +330,7 @@
         align-self: center;
         margin-left: 0.5em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.25em;
         color: #3E6CEC;
     }
@@ -341,14 +341,14 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 2.531em;
+        height: 2.625em;
         background-color: white;
         border: 0.001em solid transparent;
         border-radius: 1.625em;
     }
 
     .userPasswordField {
-        width: 100%;
+        width: 90%;
         height: 100%;
         padding-left: 0.625em;
         border: 0.001em solid transparent;
@@ -374,7 +374,7 @@
         border-radius: 2.25em;
         box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
         font-size: 1.25em;
-        font-weight: 600;
+        font-weight: 700;
         color: #3E6CEC;
         background-color: white;
     }
@@ -401,7 +401,7 @@
         align-self: center;
         margin-left: 0.625em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.375em;
         color: #3E6CEC;
     }
@@ -423,7 +423,7 @@
         align-self: center;
         margin-left: 0.625em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.375em;
         color: #3E6CEC;
     }
@@ -445,7 +445,7 @@
         align-self: center;
         margin-left: 0.625em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.375em;
         color: #3E6CEC;
     }
@@ -463,7 +463,7 @@
     }
 
     .userPasswordField {
-        width: 100%;
+        width: 90%;
         height: 100%;
         padding-left: 0.625em;
         border: 0.001em solid transparent;
@@ -476,7 +476,7 @@
 
     .showPasswordButton {
         font-size: 1.625em;
-        margin-right: 0.875em;
+        margin-right: 0.75em;
     }
 
     .accountCreatingButton {
@@ -484,12 +484,12 @@
         align-self: center;
         justify-self: center;
         width: 7.5em;
-        height: 2.75em;
+        height: 2.727em;
         border: 0.001em solid transparent;
         border-radius: 2.375em;
         box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
         font-size: 1.375em;
-        font-weight: 600;
+        font-weight: 700;
         color: #3E6CEC;
         background-color: white;
     }
@@ -516,14 +516,14 @@
         align-self: center;
         margin-left: 0.625em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.5em;
         color: #3E6CEC;
     }
 
     .userNameField {
         width: 100%;
-        height: 2.25em;
+        height: 2.364em;
         padding-left: 0.625em;
         border: 0.001em solid transparent;
         border-radius: 1.875em;
@@ -538,14 +538,14 @@
         align-self: center;
         margin-left: 0.625em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.5em;
         color: #3E6CEC;
     }
 
     .userEmailField {
         width: 100%;
-        height: 2.25em;
+        height: 2.364em;
         padding-left: 0.625em;
         border: 0.001em solid transparent;
         border-radius: 1.875em;
@@ -560,7 +560,7 @@
         align-self: center;
         margin-left: 0.625em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.5em;
         color: #3E6CEC;
     }
@@ -571,14 +571,14 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 3.125em;
+        height: 3.25em;
         background-color: white;
         border: 0.001em solid transparent;
         border-radius: 1.875em;
     }
 
     .userPasswordField {
-        width: 100%;
+        width: 90%;
         height: 100%;
         padding-left: 0.625em;
         border: 0.001em solid transparent;
@@ -591,7 +591,7 @@
 
     .showPasswordButton {
         font-size: 2em;
-        margin-right: 0.875em;
+        margin-right: 0.75em;
     }
 
     .accountCreatingButton {
@@ -604,7 +604,7 @@
         border-radius: 2.5em;
         box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
         font-size: 1.5em;
-        font-weight: 600;
+        font-weight: 700;
         color: #3E6CEC;
         background-color: white;
     }
@@ -631,7 +631,7 @@
         align-self: center;
         margin-left: 0.75em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.625em;
         color: #3E6CEC;
     }
@@ -653,7 +653,7 @@
         align-self: center;
         margin-left: 0.75em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.625em;
         color: #3E6CEC;
     }
@@ -675,7 +675,7 @@
         align-self: center;
         margin-left: 0.75em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.625em;
         color: #3E6CEC;
     }
@@ -693,7 +693,7 @@
     }
 
     .userPasswordField {
-        width: 100%;
+        width: 90%;
         height: 100%;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
@@ -706,20 +706,20 @@
 
     .showPasswordButton {
         font-size: 2.125em;
-        margin-right: 1em;
+        margin-right: 0.75em;
     }
 
     .accountCreatingButton {
         grid-area: 8 / 5 / 11 / 7;
         align-self: center;
         justify-self: center;
-        width: 7.5em;
+        width: 7em;
         height: 2.5em;
         border: 0.001em solid transparent;
         border-radius: 1.563em;
         box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
         font-size: 1.625em;
-        font-weight: 600;
+        font-weight: 700;
         color: #3E6CEC;
         background-color: white;
     }
@@ -746,7 +746,7 @@
         align-self: center;
         margin-left: 0.75em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.625em;
         color: #3E6CEC;
     }
@@ -768,7 +768,7 @@
         align-self: center;
         margin-left: 0.75em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.625em;
         color: #3E6CEC;
     }
@@ -790,7 +790,7 @@
         align-self: center;
         margin-left: 0.75em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.625em;
         color: #3E6CEC;
     }
@@ -808,7 +808,7 @@
     }
 
     .userPasswordField {
-        width: 100%;
+        width: 90%;
         height: 100%;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
@@ -821,20 +821,20 @@
 
     .showPasswordButton {
         font-size: 2.25em;
-        margin-right: 1em;
+        margin-right: 0.75em;
     }
 
     .accountCreatingButton {
         grid-area: 8 / 5 / 11 / 7;
         align-self: center;
         justify-self: center;
-        width: 7.5em;
+        width: 7em;
         height: 2.5em;
         border: 0.001em solid transparent;
         border-radius: 1.563em;
         box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
         font-size: 1.625em;
-        font-weight: 600;
+        font-weight: 700;
         color: #3E6CEC;
         background-color: white;
     }
@@ -861,7 +861,7 @@
         align-self: center;
         margin-left: 0.75em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.625em;
         color: #3E6CEC;
     }
@@ -883,7 +883,7 @@
         align-self: center;
         margin-left: 0.75em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.625em;
         color: #3E6CEC;
     }
@@ -905,7 +905,7 @@
         align-self: center;
         margin-left: 0.75em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.625em;
         color: #3E6CEC;
     }
@@ -923,7 +923,7 @@
     }
 
     .userPasswordField {
-        width: 100%;
+        width: 90%;
         height: 100%;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
@@ -936,7 +936,7 @@
 
     .showPasswordButton {
         font-size: 2.25em;
-        margin-right: 1em;
+        margin-right: 0.75em;
     }
 
     .showPasswordButton:hover {
@@ -947,13 +947,13 @@
         grid-area: 8 / 5 / 11 / 7;
         align-self: center;
         justify-self: center;
-        width: 7.5em;
-        height: 2.625em;
+        width: 7em;
+        height: 2.5em;
         border: 0.001em solid transparent;
         border-radius: 1.563em;
         box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
         font-size: 1.625em;
-        font-weight: 600;
+        font-weight: 700;
         color: #3E6CEC;
         background-color: white;
         transition-timing-function: linear;
@@ -992,7 +992,7 @@
         align-self: center;
         margin-left: 0.75em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.625em;
         color: #3E6CEC;
     }
@@ -1014,7 +1014,7 @@
         align-self: center;
         margin-left: 0.75em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.625em;
         color: #3E6CEC;
     }
@@ -1036,7 +1036,7 @@
         align-self: center;
         margin-left: 0.75em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.625em;
         color: #3E6CEC;
     }
@@ -1054,7 +1054,7 @@
     }
 
     .userPasswordField {
-        width: 100%;
+        width: 90%;
         height: 100%;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
@@ -1067,7 +1067,7 @@
 
     .showPasswordButton {
         font-size: 2.25em;
-        margin-right: 1em;
+        margin-right: 0.75em;
     }
 
     .showPasswordButton:hover {
@@ -1078,13 +1078,13 @@
         grid-area: 8 / 5 / 11 / 7;
         align-self: center;
         justify-self: center;
-        width: 7.5em;
-        height: 2.75em;
+        width: 7em;
+        height: 2.5em;
         border: 0.001em solid transparent;
         border-radius: 1.563em;
         box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
         font-size: 1.625em;
-        font-weight: 600;
+        font-weight: 700;
         color: #3E6CEC;
         background-color: white;
         transition-timing-function: linear;
@@ -1145,7 +1145,7 @@
         align-self: center;
         margin-left: 0.75em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.625em;
         color: #3E6CEC;
     }
@@ -1167,7 +1167,7 @@
         align-self: center;
         margin-left: 0.75em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.625em;
         color: #3E6CEC;
     }
@@ -1185,7 +1185,7 @@
     }
 
     .userPasswordField {
-        width: 100%;
+        width: 90%;
         height: 2.25em;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
@@ -1198,7 +1198,7 @@
 
     .showPasswordButton {
         font-size: 2.25em;
-        margin-right: 1em;
+        margin-right: 0.75em;
     }
 
     .showPasswordButton:hover {
@@ -1209,13 +1209,13 @@
         grid-area: 8 / 5 / 11 / 7;
         align-self: center;
         justify-self: center;
-        width: 7.5em;
-        height: 2.75em;
+        width: 7em;
+        height: 2.5em;
         border: 0.001em solid transparent;
         border-radius: 1.563em;
         box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
         font-size: 1.625em;
-        font-weight: 600;
+        font-weight: 700;
         color: #3E6CEC;
         background-color: white;
         transition-timing-function: linear;
@@ -1254,7 +1254,7 @@
         align-self: center;
         margin-left: 0.75em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.625em;
         color: #3E6CEC;
     }
@@ -1276,7 +1276,7 @@
         align-self: center;
         margin-left: 0.75em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.625em;
         color: #3E6CEC;
     }
@@ -1298,7 +1298,7 @@
         align-self: center;
         margin-left: 0.75em;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.625em;
         color: #3E6CEC;
     }
@@ -1316,7 +1316,7 @@
     }
 
     .userPasswordField {
-        width: 100%;
+        width: 90%;
         height: 100%;
         padding-left: 0.75em;
         border: 0.001em solid transparent;
@@ -1329,7 +1329,7 @@
 
     .showPasswordButton {
         font-size: 2.25em;
-        margin-right: 1em;
+        margin-right: 0.75em;
     }
 
     .showPasswordButton:hover {
@@ -1340,13 +1340,13 @@
         grid-area: 8 / 5 / 11 / 7;
         align-self: center;
         justify-self: center;
-        width: 7.5em;
-        height: 2.813em;
+        width: 7em;
+        height: 2.5em;
         border: 0.001em solid transparent;
         border-radius: 1.563em;
         box-shadow: 0.75em 0.75em 2.5em rgba(129, 126, 126, 0.938);
         font-size: 1.625em;
-        font-weight: 600;
+        font-weight: 700;
         color: #3E6CEC;
         background-color: white;
         transition-timing-function: linear;

@@ -1,7 +1,7 @@
 // Importing Area
 import Style from './SignUp.module.css';
 import { HiMiniEye, HiMiniEyeSlash } from 'react-icons/hi2';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 // That's the sign up page component
 const SignUp = () => {
@@ -38,7 +38,7 @@ const SignUp = () => {
 
                             // Setting the default behaviour of this event
                             event.preventDefault();
-                            // Setting to disable this icon and active other
+                            // Setting to disable this icon and active other one
                             // In this case won't appear the password credential
                             setActiveButton(false);
 
@@ -46,7 +46,7 @@ const SignUp = () => {
 
                             // Setting the default behaviour of this event
                             event.preventDefault();
-                            // Setting to active other icon and disable this
+                            // Setting to active other icon and disable this one
                             // In this case will appear the password credential
                             setActiveButton(true);
     
