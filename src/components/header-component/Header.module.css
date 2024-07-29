@@ -23,10 +23,19 @@
 /* This style will be apply when the screen width is between 320 pixels until 400 pixels */
 @media (320px <= width <= 400px) {
 
+    /* In this case, the logo won't appear outside of the aside menu */
     .logo, .linkEffect {
         display: none;
     }
 
+    /* In this case, the navigation container that has all the navigation links */
+    /* Won't appear because is in the mobile device screen */
+    .navigationArea, .favoriteMoviesButton, .loginButton, .signUpButton {
+        display: none;
+    }
+
+    /* The burguer menu appear because is in mobile device screen */
+    /* In this case, it's the burguer menu before to be clicked */
     .burgerMenu {
         width: 30%;
         height: 100%;
@@ -36,59 +45,58 @@
         align-items: center;
     }
 
-    .burgerMenu:hover {
-        cursor: pointer;
-    }
-
+    /* These are the layers of the burguer menu icon */
     .layer_BurgerMenu {
-        background-color: #3E6CEC;
-        height: 0.375em;
         width: 55%;
-        border-radius: 0.9375em;
+        height: 0.375em;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
+        background-color: #3E6CEC;
     }
 
+    /* In this case the aside menu is hidden */
+    /* It won't appear until the user decides to click in the burguer menu */
     .disableAsideMenu {
         width: 55%;
         height: 100%;
-        transition-timing-function: linear;
-        transition-duration: 0.8s;
-        transition-delay: 0.2s;
         position: fixed;
         top: 0em;
         left: -55%;
         background-color: #2F2D7D;
+        transition-timing-function: linear;
+        transition-duration: 0.8s;
+        transition-delay: 0.2s;
     }
 
+    /* When the user decides to click in the burguer menu */
+    /* It will appear the container of the aside menu */
     .activatedAsideMenu {
         width: 55%;
         height: 100%;
-        transition-timing-function: linear;
-        transition-duration: 0.4s;
-        transition-delay: 0.1s;
         position: fixed;
         top: 0em;
         left: 0%;
         background-color: #2F2D7D;
+        transition-timing-function: linear;
+        transition-duration: 0.4s;
+        transition-delay: 0.1s;
     }
 
+    /* These styles are relative to the aside menu disable button */
     .disableButtonContainer {
-        width: 100%;
-        height: 20%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        height: 20%;
         border-bottom: 0.125em solid rgba(255, 255, 255, 0.7);
     }
 
-    .disableButtonContainer:hover {
-        cursor: pointer;
-    }
-
     .disableButton_layer {
-        position: absolute;
-        border-radius: 0.9375em;
         background-color: white;
+        position: absolute;
+        border-radius: 1em;
     }
 
     .disableButton_firstLayer {
@@ -115,18 +123,14 @@
         justify-content: space-evenly;
         align-items: center;
         padding: 0.75em 0em;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+        border-bottom: 0.125em solid rgba(255, 255, 255, 0.7);
     }
 
     .link {
-        text-decoration: none;
         font-size: 1.125em;
         font-weight: 900;
+        text-decoration: none;
         color: white;
-    }
-
-    .navigationArea, .favoriteMoviesButton, .loginButton, .signUpButton {
-        display: none;
     }
 
 }
@@ -135,10 +139,19 @@
 /* This style will be apply when the screen width is between 401 pixels until 549 pixels */
 @media (401px <= width <= 549px) {
 
+    /* In this case, the logo won't appear outside of the aside menu */
     .logo, .linkEffect {
         display: none;
     }
 
+    /* In this case, the navigation container that has all the navigation links */
+    /* Won't appear because is in the mobile device screen */
+    .navigationArea, .favoriteMoviesButton, .loginButton, .signUpButton {
+        display: none;
+    }
+
+    /* The burguer menu appear because is in mobile device screen */
+    /* In this case, it's the burguer menu before to be clicked */
     .burgerMenu {
         width: 30%;
         height: 100%;
@@ -148,58 +161,58 @@
         align-items: center;
     }
 
-    .burgerMenu:hover {
-        cursor: pointer;
-    }
-
+    /* These are the layers of the burguer menu icon */
     .layer_BurgerMenu {
-        background-color: #3E6CEC;
-        height: 0.375em;
         width: 55%;
-        border-radius: 0.9375em;
+        height: 0.375em;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
+        background-color: #3E6CEC;
     }
 
+    /* In this case the aside menu is hidden */
+    /* It won't appear until the user decides to click in the burguer menu */
     .disableAsideMenu {
         width: 50%;
         height: 100%;
-        transition-timing-function: linear;
-        transition-duration: 0.8s;
-        transition-delay: 0.2s;
         position: fixed;
         top: 0em;
         left: -55%;
         background-color: #2F2D7D;
+        transition-timing-function: linear;
+        transition-duration: 0.8s;
+        transition-delay: 0.2s;
     }
 
+    /* When the user decides to click in the burguer menu */
+    /* It will appear the container of the aside menu */
     .activatedAsideMenu {
         width: 50%;
         height: 100%;
-        transition-timing-function: linear;
-        transition-duration: 0.4s;
-        transition-delay: 0.1s;
         position: fixed;
         top: 0em;
         left: 0%;
         background-color: #2F2D7D;
+        transition-timing-function: linear;
+        transition-duration: 0.4s;
+        transition-delay: 0.1s;
     }
 
+    /* These styles are relative to the aside menu disable button */
     .disableButtonContainer {
-        width: 100%;
-        height: 22%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        height: 22%;
         border-bottom: 0.125em solid rgba(255, 255, 255, 0.7);
-    }
-
-    .disableButtonContainer:hover {
-        cursor: pointer;
     }
 
     .disableButton_layer {
         position: absolute;
-        border-radius: 0.9375em;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
         background-color: white;
     }
 
@@ -227,18 +240,14 @@
         justify-content: space-evenly;
         align-items: center;
         padding: 0.75em 0em;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+        border-bottom: 0.125em solid rgba(255, 255, 255, 0.7);
     }
 
     .link {
-        text-decoration: none;
         font-size: 1.25em;
         font-weight: 900;
+        text-decoration: none;
         color: white;
-    }
-
-    .navigationArea, .favoriteMoviesButton, .loginButton, .signUpButton {
-        display: none;
     }
 
 }
@@ -247,71 +256,80 @@
 /* This style will be apply when the screen width is between 550 pixels until 600 pixels */
 @media (550px <= width <= 600px) {
 
+    /* In this case, the logo won't appear outside of the aside menu */
     .logo, .linkEffect {
         display: none;
     }
 
+    /* In this case, the navigation container that has all the navigation links */
+    /* Won't appear because is in the mobile device screen */
+    .navigationArea, .favoriteMoviesButton, .loginButton, .signUpButton {
+        display: none;
+    }
+
+    /* The burguer menu appear because is in mobile device screen */
+    /* In this case, it's the burguer menu before to be clicked */
     .burgerMenu {
-        width: 30%;
-        height: 100%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-evenly;
         align-items: center;
+        width: 30%;
+        height: 100%;
     }
 
-    .burgerMenu:hover {
-        cursor: pointer;
-    }
-
+    /* These are the layers of the burguer menu icon */
     .layer_BurgerMenu {
-        background-color: #3E6CEC;
-        height: 0.375em;
         width: 55%;
-        border-radius: 0.9375em;
+        height: 0.375em;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
+        background-color: #3E6CEC;
     }
 
+    /* In this case the aside menu is hidden */
+    /* It won't appear until the user decides to click in the burguer menu */
     .disableAsideMenu {
         width: 50%;
         height: 100%;
-        transition-timing-function: linear;
-        transition-duration: 0.8s;
-        transition-delay: 0.2s;
         position: fixed;
         top: 0em;
         left: -55%;
+        transition-timing-function: linear;
+        transition-duration: 0.8s;
+        transition-delay: 0.2s;
         background-color: #2F2D7D;
     }
 
+    /* When the user decides to click in the burguer menu */
+    /* It will appear the container of the aside menu */
     .activatedAsideMenu {
         width: 50%;
         height: 100%;
-        transition-timing-function: linear;
-        transition-duration: 0.4s;
-        transition-delay: 0.1s;
         position: fixed;
         top: 0em;
         left: 0%;
+        transition-timing-function: linear;
+        transition-duration: 0.4s;
+        transition-delay: 0.1s;
         background-color: #2F2D7D;
     }
 
+    /* These styles are relative to the aside menu disable button */
     .disableButtonContainer {
-        width: 100%;
-        height: 25%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        height: 25%;
         border-bottom: 0.125em solid rgba(255, 255, 255, 0.7);
-    }
-
-    .disableButtonContainer:hover {
-        cursor: pointer;
     }
 
     .disableButton_layer {
         position: absolute;
-        border-radius: 0.9375em;
+        border: 0.001em solid transparent;
+        border-radius: 1em;
         background-color: white;
     }
 
@@ -343,14 +361,10 @@
     }
 
     .link {
-        text-decoration: none;
         font-size: 1.375em;
         font-weight: 900;
+        text-decoration: none;
         color: white;
-    }
-
-    .navigationArea, .favoriteMoviesButton, .loginButton, .signUpButton {
-        display: none;
     }
 
 }
@@ -359,20 +373,17 @@
 /* This style will be apply when the screen width is between 601 pixels until 767 pixels */
 @media (601px <= width <= 767px) {
 
-    .container {
-        width: 100vw;
-        height: 18vh;
-        background-color: rgb(202, 197, 197);
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
+    /* In this case the burguer menu won't appear because isn't a mobile device screen */
     .burguerMenu, .layer_BurguerMenu {
         display: none;
     }
 
+    /* So it's not necessary the aside menu or other thing like this one */
+    .disableAsideMenu {
+        display: none;
+    }
+
+    /* These styles are relative to the navigation container and your links */
     .linkEffect {
         text-decoration: none;
         margin-left: 1.125em;
@@ -385,17 +396,13 @@
         color: #3E6CEC;
     }
 
-    .disableAsideMenu {
-        display: none;
-    }
-
     .navigationArea {
-        width: 60%;
-        height: 100%;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-evenly;
         align-items: center;
+        width: 60%;
+        height: 100%;
     }
 
     .favoriteMoviesButton, .loginButton, .signUpButton {
@@ -411,10 +418,17 @@
 /* This style will be apply when the screen width is between 768 pixels until 1023 pixels */
 @media (768px <= width <= 1023px) {
 
+    /* In this case the burguer menu won't appear because isn't a mobile device screen */
     .burguerMenu, .layer_BurguerMenu {
         display: none;
     }
 
+    /* So it's not necessary the aside menu or other thing like this one */
+    .disableAsideMenu {
+        display: none;
+    }
+
+    /* These styles are relative to the navigation container and your links */
     .linkEffect {
         text-decoration: none;
         margin-left: 1.25em;
@@ -427,24 +441,20 @@
         color: #3E6CEC;
     }
 
-    .disableAsideMenu {
-        display: none;
-    }
-
     .navigationArea {
-        width: 60%;
-        height: 100%;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-evenly;
         align-items: center;
+        width: 60%;
+        height: 100%;
     }
 
     .favoriteMoviesButton, .loginButton, .signUpButton {
         font-size: 1.25em;
         font-weight: 600;
         text-decoration: none;
-        color: #3E6CEC;
+        color: #0a34a7;
     }
 
 }
@@ -454,7 +464,13 @@
 /* It will be apply when the width is between 1024 pixels until 1439 pixels */
 @media (1024px <= width <= 1439px) {
 
+    /* In this case the burguer menu won't appear because isn't a mobile device screen */
     .burguerMenu, .layer_BurguerMenu {
+        display: none;
+    }
+
+    /* So it's not necessary the aside menu or other thing like this one */
+    .disableAsideMenu {
         display: none;
     }
 
@@ -468,10 +484,6 @@
         font-weight: 800;
         letter-spacing: 0.088em;
         color: #3E6CEC;
-    }
-
-    .disableAsideMenu {
-        display: none;
     }
 
     .navigationArea {
@@ -496,7 +508,13 @@
 /* This style will be apply when the screen width is equal or bigger than 1440 pixels */
 @media (1440px <= width) {
 
+    /* In this case the burguer menu won't appear because isn't a mobile device screen */
     .burguerMenu, .layer_BurguerMenu {
+        display: none;
+    }
+
+    /* So it's not necessary the aside menu or other thing like this one */
+    .disableAsideMenu {
         display: none;
     }
 
@@ -512,17 +530,13 @@
         color: #3E6CEC;
     }
 
-    .disableAsideMenu {
-        display: none;
-    }
-
     .navigationArea {
-        width: 50%;
-        height: 100%;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-evenly;
         align-items: center;
+        width: 50%;
+        height: 100%;
     }
 
     .favoriteMoviesButton, .loginButton, .signUpButton {

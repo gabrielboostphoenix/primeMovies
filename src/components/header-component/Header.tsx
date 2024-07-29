@@ -7,15 +7,15 @@ import { useState, useEffect } from 'react';
 // That's a header component
 const Header = () => {
 
-    // That's a function that checks if exists user information
+    // That's a function that checks if exists saved user informations
     const checkForUserInformation = () => {
 
-        // Getting the user informations
+        // Getting the user informations in the local storage
         const result = localStorage.getItem('primeMovies');
         // Checking whether there are
         if (typeof result === 'string') {
 
-            // Extracting the converted informations
+            // Extracting the converted informations to JSON
             const convertedInformations: userInformations = JSON.parse(result);
             // Filtering them to get the user credentials
             const loginInformations = convertedInformations.jwtUserCredentials;
@@ -109,8 +109,8 @@ const Header = () => {
 
                         {
                             loginStatus ?
-                            <img src="../../../public/favorites.png" alt="Ícone de Favoritos"/> :
-                            <img src="../../../public/login.png" alt="Ícone de Login"/>
+                            <img src="../../../public/favorites.png" alt="ícone de filmes favoritos"/> :
+                            <img src="../../../public/login.png" alt="ícone de log-in"/>
                         }
 
                     </li>
@@ -126,14 +126,14 @@ const Header = () => {
                         {
                             loginStatus ?
                             false :
-                            <img src="../../../public/add.png" alt="Ícone de SignUp"/>
+                            <img src="../../../public/add.png" alt="ícone de sign-in"/>
                         }
 
                     </li>
 
                     <li className={Style.linkContainer}>
                         <Link to={'/moviesExploring'} className={Style.link}>PrimeMovies</Link>
-                        <img src="../../../public/home.png" alt="Ícone de Home"/>
+                        <img src="../../../public/home.png" alt="ícone de home"/>
                     </li>
 
                 </ul>
