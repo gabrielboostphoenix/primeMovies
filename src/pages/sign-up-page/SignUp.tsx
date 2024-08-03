@@ -9,7 +9,8 @@ const SignUp = () => {
     /*
         Using a react hook to declare the necessary variables
     */
-    const [activatedButton, setActiveButton] = useState(false);
+    const [activatedButton, setActiveButton] = useState(true);
+    const [inputType, setInputType] = useState('password');
 
     return (
 
@@ -32,24 +33,26 @@ const SignUp = () => {
                     <label htmlFor='userPassword' className={Style.userPasswordLabel}>Senha:</label>
                     <div className={Style.passwordAndButtonContainer}>
 
-                        <input type='password' id='userPassword' className={Style.userPasswordField} placeholder='Crie uma senha para conta' />
+                        <input type={inputType} id='userPassword' className={Style.userPasswordField} placeholder='Crie uma senha para conta' />
 
-                        { activatedButton ? <HiMiniEyeSlash className={Style.showPasswordButton} onClick={(event) => {
-
-                            // Setting the default behaviour of this event
-                            event.preventDefault();
-                            // Setting to disable this icon and active other one
-                            // In this case won't appear the password credential
-                            setActiveButton(false);
-
-                            }}/> : <HiMiniEye className={Style.showPasswordButton} onClick={(event) => {
+                        { activatedButton ? <HiMiniEye className={Style.showPasswordButton} onClick={(event) => {
 
                             // Setting the default behaviour of this event
                             event.preventDefault();
                             // Setting to active other icon and disable this one
                             // In this case will appear the password credential
+                            setActiveButton(false);
+                            setInputType('text');
+
+                            }}/> : <HiMiniEyeSlash className={Style.showPasswordButton} onClick={(event) => {
+
+                            // Setting the default behaviour of this event
+                            event.preventDefault();
+                            // Setting to disable this icon and active other one
+                            // In this case won't appear the password credential
                             setActiveButton(true);
-    
+                            setInputType('password');
+
                             }}/>
 
                         }
